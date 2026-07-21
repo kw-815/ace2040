@@ -31,6 +31,21 @@
 
 <main>
 
+<!-- Nav interno del home (sticky) -->
+<nav class="home-nav" aria-label="Índice del resumen">
+  <div class="wrap home-nav__inner">
+    <a href="#datos">Contexto</a>
+    <a href="#vision">Visión</a>
+    <a href="#punto">Punto de partida</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#alineacion">Alineación</a>
+    <a href="#pilares">Pilares</a>
+    <a href="#sectores">Sectores</a>
+    <a href="#voces">Voces</a>
+    <a href="#roadmap">Próximos pasos</a>
+  </div>
+</nav>
+
 <!-- HERO -->
 <section class="hero" aria-labelledby="titulo-principal">
   <div class="hero__media" aria-hidden="true">
@@ -57,7 +72,7 @@
 </section>
 
 <!-- 01 · DATOS DE INTERÉS -->
-<section class="section" aria-labelledby="titulo-datos">
+<section class="section" id="datos" aria-labelledby="titulo-datos">
   <div class="wrap">
     <header class="section-mark">
       <span class="section-mark__num" aria-hidden="true">01</span>
@@ -108,7 +123,7 @@
 </section>
 
 <!-- 02 · VISIÓN AL 2040 -->
-<section class="section vision" aria-labelledby="titulo-vision">
+<section class="section vision" id="vision" aria-labelledby="titulo-vision">
   <div class="wrap">
     <header class="section-mark">
       <span class="section-mark__num" aria-hidden="true">02</span>
@@ -133,7 +148,7 @@
 </section>
 
 <!-- 03 · PUNTO DE PARTIDA -->
-<section class="section stats" aria-labelledby="titulo-punto">
+<section class="section stats" id="punto" aria-labelledby="titulo-punto">
   <div class="wrap">
     <header class="section-mark">
       <span class="section-mark__num" aria-hidden="true">03</span>
@@ -145,93 +160,98 @@
       </p>
     </header>
 
-    <div class="stats-grid">
-      <article class="stat">
-        <p class="stat__label">Crecimiento</p>
-        <p class="stat__text">
-          En 2025 la economía creció <strong>3,7%</strong>, impulsada por el
-          sector privado, frente a un promedio anual de <strong>1,9%</strong>
-          en la década 2014-2023. La proyección de mediano plazo es
-          <strong>2,7%</strong>.
+    <!-- Fila 1: 3 stats destacadas con número protagonista -->
+    <div class="stats-hero">
+      <article class="stat-hero">
+        <p class="stat-hero__label">Crecimiento 2025</p>
+        <p class="stat-hero__figure">3,7<span>%</span></p>
+        <p class="stat-hero__note">
+          Impulsado por el sector privado, frente a un promedio anual de
+          <strong>1,9%</strong> en la década 2014-2023. Proyección de
+          mediano plazo: <strong>2,7%</strong>.
         </p>
       </article>
-      <article class="stat">
-        <p class="stat__label">Productividad</p>
-        <p class="stat__text">
-          El PIB por hora trabajada promedió <strong>USD 6,6</strong>
-          (2005-2024) frente a USD 9,1 en América Latina y el Caribe: una
-          brecha del <strong>27%</strong>.
-        </p>
-      </article>
-      <article class="stat">
-        <p class="stat__label">Empleo</p>
-        <p class="stat__text">
-          El empleo adecuado subió 4,0 p.p. entre 2024 y 2025, hasta el
-          <strong>37,1%</strong> de la PEA. La informalidad promedió
-          <strong>55,7%</strong> en 2014-2023.
-        </p>
-      </article>
-      <article class="stat">
-        <p class="stat__label">Inversión</p>
-        <p class="stat__text">
-          Entre 2014 y 2023 la inversión pública cayó del <strong>12,9%</strong>
-          al <strong>4,5%</strong> del PIB, mientras la privada subió del
-          10,6% al <strong>15,4%</strong>.
-        </p>
-      </article>
-      <article class="stat">
-        <p class="stat__label">Riesgo país</p>
-        <p class="stat__text">
-          Descendió por debajo de los <strong>400 puntos básicos</strong>
-          en 2025-2026, su nivel más bajo en doce años, frente a un promedio
+      <article class="stat-hero">
+        <p class="stat-hero__label">Riesgo país</p>
+        <p class="stat-hero__figure">&lt;400<span>pb</span></p>
+        <p class="stat-hero__note">
+          En 2025-2026, su nivel más bajo en doce años, frente a un promedio
           de más de <strong>998 puntos</strong> en 2014-2023.
         </p>
       </article>
-      <article class="stat">
-        <p class="stat__label">Pobreza</p>
-        <p class="stat__text">
-          La pobreza por ingresos bajó del <strong>28,0%</strong> (2024) al
-          <strong>21,4%</strong> (2025); la pobreza rural sigue en
+      <article class="stat-hero">
+        <p class="stat-hero__label">Empleo adecuado</p>
+        <p class="stat-hero__figure">37,1<span>%</span></p>
+        <p class="stat-hero__note">
+          De la PEA en 2025, tras subir 4,0 p.p. desde 2024. La informalidad
+          promedió <strong>55,7%</strong> en 2014-2023.
+        </p>
+      </article>
+    </div>
+
+    <!-- Fila 2: stats compactas horizontales -->
+    <div class="stats-list">
+      <article class="stat-row">
+        <span class="stat-row__key">Productividad</span>
+        <span class="stat-row__val">USD 6,6/h</span>
+        <span class="stat-row__ctx">
+          PIB por hora trabajada 2005-2024 vs USD 9,1 en ALC.
+          <strong>Brecha del 27%</strong>.
+        </span>
+      </article>
+      <article class="stat-row">
+        <span class="stat-row__key">Inversión</span>
+        <span class="stat-row__val">12,9% → 4,5%</span>
+        <span class="stat-row__ctx">
+          Caída de la inversión pública 2014-2023. La privada subió del
+          10,6% al <strong>15,4%</strong>.
+        </span>
+      </article>
+      <article class="stat-row">
+        <span class="stat-row__key">Pobreza</span>
+        <span class="stat-row__val">28,0% → 21,4%</span>
+        <span class="stat-row__ctx">
+          Reducción entre 2024 y 2025. Pobreza rural sigue en
           <strong>37,6%</strong>.
-        </p>
+        </span>
       </article>
-      <article class="stat">
-        <p class="stat__label">Exportaciones</p>
-        <p class="stat__text">
-          El petróleo pasó de uno de cada tres dólares exportados a
-          <strong>uno de cada cuatro</strong>. Las exportaciones no
+      <article class="stat-row">
+        <span class="stat-row__key">Exportaciones</span>
+        <span class="stat-row__val">1 de cada 4</span>
+        <span class="stat-row__ctx">
+          Dólares exportados provienen del petróleo (antes: 1 de 3). No
           tradicionales crecieron <strong>36%</strong>.
-        </p>
+        </span>
       </article>
-      <article class="stat">
-        <p class="stat__label">Costos logísticos</p>
-        <p class="stat__text">
-          Las empresas destinan <strong>USD 17,9 de cada USD 100</strong> en
-          ventas a logística, y hasta <strong>USD 26,4</strong> en las de
-          menor tamaño.
-        </p>
+      <article class="stat-row">
+        <span class="stat-row__key">Costos logísticos</span>
+        <span class="stat-row__val">USD 17,9 / 100</span>
+        <span class="stat-row__ctx">
+          Del valor de ventas destinado a logística. Hasta
+          <strong>USD 26,4</strong> en empresas de menor tamaño.
+        </span>
       </article>
-      <article class="stat">
-        <p class="stat__label">Clima</p>
-        <p class="stat__text">
-          Cerca de <strong>50 desastres naturales</strong> en dos décadas,
-          con daños superiores a <strong>USD 4.000 millones</strong> y cerca
-          de <strong>3 millones</strong> de personas afectadas.
-        </p>
+      <article class="stat-row">
+        <span class="stat-row__key">Riesgo climático</span>
+        <span class="stat-row__val">≈50 desastres</span>
+        <span class="stat-row__ctx">
+          En dos décadas, con daños por más de <strong>USD 4.000 M</strong>
+          y cerca de <strong>3 millones</strong> de personas afectadas.
+        </span>
       </article>
-      <article class="stat">
-        <p class="stat__label">Demografía</p>
-        <p class="stat__text">
-          Ecuador llegaría a <strong>20,2 millones</strong> de habitantes
-          hacia 2040.
-        </p>
+      <article class="stat-row">
+        <span class="stat-row__key">Demografía</span>
+        <span class="stat-row__val">20,2 M</span>
+        <span class="stat-row__ctx">
+          Habitantes proyectados para el año 2040.
+        </span>
       </article>
     </div>
   </div>
 </section>
 
 <!-- 04 · CÓMO SE CONSTRUYÓ -->
-<section class="section build" aria-labelledby="titulo-build">
+<section class="section build" id="proceso" aria-labelledby="titulo-build">
   <div class="wrap">
     <header class="section-mark">
       <span class="section-mark__num" aria-hidden="true">04</span>
@@ -293,7 +313,7 @@
 </section>
 
 <!-- 05 · ALINEACIÓN ESTRATÉGICA -->
-<section class="section align" aria-labelledby="titulo-align">
+<section class="section align" id="alineacion" aria-labelledby="titulo-align">
   <div class="wrap">
     <header class="section-mark">
       <span class="section-mark__num" aria-hidden="true">05</span>
@@ -338,7 +358,7 @@
 </section>
 
 <!-- 06 · LOS CUATRO PILARES -->
-<section class="section" aria-labelledby="titulo-pilares">
+<section class="section" id="pilares" aria-labelledby="titulo-pilares">
   <div class="wrap">
     <header class="section-mark">
       <span class="section-mark__num" aria-hidden="true">06</span>
@@ -350,14 +370,20 @@
       </p>
     </header>
 
-    <div class="obj-cover-grid">
+    <div class="objectives__grid">
       <a href="pages/pilar-1.html" class="obj-cover obj-cover--1">
         <span class="obj-cover__top">
           <span class="obj-cover__num" aria-hidden="true">01</span>
           <span class="obj-cover__title">Institucionalidad y Seguridad Jurídica</span>
           <span class="obj-cover__cta">11 lineamientos →</span>
         </span>
-        <span class="obj-cover__photo"><img src="img/pilar-1-cover.jpg" alt="" loading="lazy" /></span>
+        <span class="obj-cover__photo">
+          <img src="img/pilar-1-cover.jpg" alt="" loading="lazy" />
+          <span class="obj-cover__blurb">
+            Reglas claras, previsibilidad regulatoria y seguridad jurídica
+            como base para la inversión productiva.
+          </span>
+        </span>
       </a>
 
       <a href="pages/pilar-2.html" class="obj-cover obj-cover--2">
@@ -366,7 +392,13 @@
           <span class="obj-cover__title">Estabilidad Fiscal</span>
           <span class="obj-cover__cta">8 lineamientos →</span>
         </span>
-        <span class="obj-cover__photo"><img src="img/pilar-2-cover.jpg" alt="" loading="lazy" /></span>
+        <span class="obj-cover__photo">
+          <img src="img/pilar-2-cover.jpg" alt="" loading="lazy" />
+          <span class="obj-cover__blurb">
+            Sostenibilidad de las finanzas públicas y un sistema tributario
+            eficiente para la inversión y la productividad.
+          </span>
+        </span>
       </a>
 
       <a href="pages/pilar-3.html" class="obj-cover obj-cover--3">
@@ -375,7 +407,13 @@
           <span class="obj-cover__title">Competitividad e Inversión Productiva</span>
           <span class="obj-cover__cta">21 lineamientos →</span>
         </span>
-        <span class="obj-cover__photo"><img src="img/pilar-3-cover.jpg" alt="" loading="lazy" /></span>
+        <span class="obj-cover__photo">
+          <img src="img/pilar-3-cover.jpg" alt="" loading="lazy" />
+          <span class="obj-cover__blurb">
+            Formalización laboral, infraestructura, innovación y
+            coordinación público-privada.
+          </span>
+        </span>
       </a>
 
       <a href="pages/pilar-4.html" class="obj-cover obj-cover--4">
@@ -384,7 +422,13 @@
           <span class="obj-cover__title">Dolarización y Profundización Financiera</span>
           <span class="obj-cover__cta">7 lineamientos →</span>
         </span>
-        <span class="obj-cover__photo"><img src="img/pilar-4-cover.jpg" alt="" loading="lazy" /></span>
+        <span class="obj-cover__photo">
+          <img src="img/pilar-4-cover.jpg" alt="" loading="lazy" />
+          <span class="obj-cover__blurb">
+            Sistema financiero capaz de canalizar ahorro y crédito hacia la
+            inversión productiva, sosteniendo el modelo monetario.
+          </span>
+        </span>
       </a>
     </div>
 
@@ -400,7 +444,7 @@
 </section>
 
 <!-- 07 · SECTORES PRIORIZADOS -->
-<section class="section sectors" aria-labelledby="titulo-sectores">
+<section class="section sectors" id="sectores" aria-labelledby="titulo-sectores">
   <div class="wrap">
     <header class="section-mark">
       <span class="section-mark__num" aria-hidden="true">07</span>
@@ -476,7 +520,7 @@
 </section>
 
 <!-- 08 · VOCES DETRÁS DE LA AGENDA -->
-<section class="section voices" aria-labelledby="titulo-voces">
+<section class="section voices" id="voces" aria-labelledby="titulo-voces">
   <div class="wrap">
     <header class="section-mark">
       <span class="section-mark__num" aria-hidden="true">08</span>
@@ -533,7 +577,7 @@
 </section>
 
 <!-- 09 · DE LA VISIÓN A LA ACCIÓN -->
-<section class="section roadmap-final" aria-labelledby="titulo-roadmap">
+<section class="section roadmap-final" id="roadmap" aria-labelledby="titulo-roadmap">
   <div class="wrap">
     <header class="section-mark">
       <span class="section-mark__num" aria-hidden="true">09</span>

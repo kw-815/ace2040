@@ -1611,3 +1611,186 @@ p { margin: 0; }
   max-width: 78ch;
 }
 .wall-note strong { color: var(--white); font-weight: 600; }
+
+/* ============================================================
+   v2 — Correcciones y mejoras UX
+   ============================================================ */
+html { scroll-behavior: smooth; }
+:root { --nav-h: 52px; }
+section[id] { scroll-margin-top: calc(var(--nav-h) + 1rem); }
+
+/* --- Nav sticky interno del home ------------------------------ */
+.home-nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(23, 28, 92, 0.85);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--t-15);
+}
+.home-nav__inner {
+  display: flex;
+  gap: var(--s-4);
+  overflow-x: auto;
+  padding-block: 0.85rem;
+  scrollbar-width: none;
+}
+.home-nav__inner::-webkit-scrollbar { display: none; }
+.home-nav a {
+  flex-shrink: 0;
+  color: var(--t-75);
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  transition: color var(--t-fast) var(--ease), background var(--t-fast) var(--ease);
+  white-space: nowrap;
+}
+.home-nav a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+
+/* --- Fix: framing del eje (borde suave + card) ---------------- */
+.phase__framing {
+  margin: 0.6rem 0 var(--s-4);
+  padding: var(--s-3) var(--s-4);
+  border-left: none;
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  color: var(--t-85, var(--t-75));
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  max-width: none;
+}
+
+/* --- Stats: fila destacada + fila compacta -------------------- */
+.stats-hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-3);
+  margin-top: var(--s-5);
+  margin-bottom: var(--s-4);
+}
+@media (max-width: 900px) { .stats-hero { grid-template-columns: 1fr; } }
+
+.stat-hero {
+  position: relative;
+  padding: var(--s-4);
+  border-radius: 16px;
+  background: linear-gradient(160deg, rgba(255,134,62,0.12), rgba(255,134,62,0.02) 60%);
+  border: 1px solid rgba(255,134,62,0.25);
+  overflow: hidden;
+}
+.stat-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--orange);
+}
+.stat-hero__label {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--orange);
+  font-weight: 700;
+  margin-bottom: var(--s-3);
+}
+.stat-hero__figure {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  margin-bottom: var(--s-3);
+}
+.stat-hero__figure span {
+  font-size: 0.42em;
+  color: var(--orange);
+  font-weight: 500;
+  margin-left: 0.15em;
+  letter-spacing: 0;
+}
+.stat-hero__note {
+  font-size: var(--fs-sm);
+  color: var(--t-75);
+  line-height: 1.55;
+}
+.stat-hero__note strong { color: var(--white); font-weight: 700; }
+
+/* --- Lista horizontal para stats compactas -------------------- */
+.stats-list {
+  display: grid;
+  gap: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--t-15);
+}
+.stat-row {
+  display: grid;
+  grid-template-columns: 190px 180px 1fr;
+  gap: var(--s-4);
+  align-items: center;
+  padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--t-15);
+  transition: background var(--t-fast) var(--ease);
+}
+.stat-row:last-child { border-bottom: 0; }
+.stat-row:hover { background: rgba(255,255,255,0.03); }
+.stat-row__key {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--orange);
+  font-weight: 700;
+}
+.stat-row__val {
+  font-size: var(--fs-lg, var(--fs-md));
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+.stat-row__ctx {
+  font-size: var(--fs-sm);
+  color: var(--t-75);
+  line-height: 1.5;
+}
+.stat-row__ctx strong { color: var(--white); font-weight: 600; }
+@media (max-width: 900px) {
+  .stat-row { grid-template-columns: 1fr; gap: 0.35rem; padding: var(--s-3); }
+}
+
+/* --- Blurb dentro de las tarjetas de pilar ------------------- */
+.obj-cover__photo { position: relative; }
+.obj-cover__blurb {
+  position: absolute;
+  inset: 0;
+  padding: var(--s-4);
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(180deg, rgba(23,28,92,0) 40%, rgba(23,28,92,0.92) 100%);
+  color: var(--white);
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity var(--t-med) var(--ease), transform var(--t-med) var(--ease);
+  pointer-events: none;
+}
+.obj-cover:hover .obj-cover__blurb,
+.obj-cover:focus-visible .obj-cover__blurb {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* En mobile, mostrar el blurb siempre (no hay hover) */
+@media (hover: none) {
+  .obj-cover__blurb { opacity: 1; transform: none; background: linear-gradient(180deg, rgba(23,28,92,0.1) 30%, rgba(23,28,92,0.9) 100%); }
+}
+
+/* --- Escala de aspecto del pilar cuando la foto no cargó ------ */
+.obj-cover__photo img {
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+}
