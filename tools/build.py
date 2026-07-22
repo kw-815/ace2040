@@ -41,14 +41,43 @@ VARIANTS = ["v1", "v2", "v3", "v1", "v4", "v2", "v5", "v1", "v6", "v2", "v7", "v
 def esc(s):
     return html.escape(s.strip())
 
+# Palabras que NO deben cerrar la frase resaltada (artículos, preposiciones,
+# conjunciones, pronombres, auxiliares). Si el corte cae aquí, se extiende
+# hasta la siguiente palabra de contenido para que la "frase fuerza" quede
+# completa y no se lea entrecortada.
+_STOP_TAIL = {
+    "el", "la", "los", "las", "un", "una", "unos", "unas", "lo",
+    "de", "del", "al", "a", "ante", "bajo", "con", "contra", "desde",
+    "en", "entre", "hacia", "hasta", "para", "por", "según", "sin",
+    "sobre", "tras", "durante", "mediante", "vía",
+    "y", "e", "o", "u", "ni", "pero", "mas", "sino", "que", "como",
+    "su", "sus", "mi", "mis", "tu", "tus", "nuestro", "nuestra",
+    "le", "les", "se", "me", "te", "nos",
+    "es", "son", "ser", "está", "están",
+}
+
+def _clean(w):
+    return w.lower().strip(",.;:()[]«»\"'¿?¡!")
+
 def split_lead(body):
+    # 1) Preferir cortes en coma o dos puntos si caen dentro del rango.
     for sep in (", ", ": "):
         i = body.find(sep)
         if 18 <= i <= 95 and len(body) - i > 25:
             return body[:i + 1], body[i + 1:].strip()
+
+    # 2) Corte por palabras: arrancar en 7 y extender mientras la última
+    #    palabra sea un "stop_tail" (artículo, preposición, conjunción...),
+    #    o mientras la primera palabra del resto sea un sustantivo pegado
+    #    a la anterior por preposición/artículo (evita cortar "la gestión",
+    #    "los marcos", "el sistema", etc.).
     words = body.split()
     if len(words) > 11:
-        return " ".join(words[:7]), " ".join(words[7:])
+        k = 7
+        max_k = len(words) - 3  # dejar al menos 3 palabras al resto
+        while k < max_k and _clean(words[k - 1]) in _STOP_TAIL:
+            k += 1
+        return " ".join(words[:k]), " ".join(words[k:])
     return body, ""
 
 def rich_text(body):
@@ -85,6 +114,15 @@ def pager(n):
             f'      <a class="obj-pager__link obj-pager__link--next" href="pilar-{next_i}.html">\n'
             f'        <small>Pilar 0{next_i} →</small>\n'
             f'        <strong>{esc(C.META[next_i-1][1])}</strong>\n'
+            f'      </a>'
+        )
+    else:
+        # Último pilar: cerrar el recorrido con retorno al índice de pilares
+        # del home para continuar con la revisión de la Agenda.
+        parts.append(
+            f'      <a class="obj-pager__link obj-pager__link--next" href="../index.html#pilares">\n'
+            f'        <small>Volver a la Agenda →</small>\n'
+            f'        <strong>Continuar con los pilares</strong>\n'
             f'      </a>'
         )
     return "\n".join(parts)
