@@ -127,10 +127,44 @@ def pager(n):
         )
     return "\n".join(parts)
 
+def render_acciones(acciones):
+    """Renderiza la lista de acciones bajo un lineamiento con chips de plazo."""
+    if not acciones:
+        return ""
+    items = []
+    for j, a in enumerate(acciones, 1):
+        texto = a.get("texto", "") if isinstance(a, dict) else a
+        plazos = a.get("plazos", []) if isinstance(a, dict) else []
+        chips = ""
+        if plazos:
+            chip_html = " ".join(
+                f'<span class="accion__chip accion__chip--{p}">{p.capitalize()} plazo</span>'
+                for p in plazos
+            )
+            chips = f'\n                  <div class="accion__chips">{chip_html}</div>'
+        items.append(
+            f'                <li class="accion">\n'
+            f'                  <span class="accion__num" aria-hidden="true">{j:02d}</span>\n'
+            f'                  <p class="accion__text">{esc(texto)}</p>'
+            f'{chips}\n'
+            f'                </li>'
+        )
+    return (
+        '              <details class="acciones-wrap" open>\n'
+        '                <summary class="acciones-wrap__head">\n'
+        f'                  <span class="acciones-wrap__count">{len(acciones)} '
+        f'{"acciones" if len(acciones) != 1 else "acción"} de política</span>\n'
+        '                </summary>\n'
+        '                <ol class="acciones">\n'
+        + "\n".join(items) + "\n"
+        '                </ol>\n'
+        '              </details>\n'
+    )
+
 def build_ejes(ejes):
     """Renderiza cada eje como una sección .phase con su framing y sus lineamientos."""
     singular, plural = C.ITEM_WORD
-    blocks, slot = [], 0
+    blocks = []
     for i, eje in enumerate(ejes, 1):
         lineamientos = eje.get("lineamientos", [])
         n = len(lineamientos)
@@ -138,16 +172,30 @@ def build_ejes(ejes):
         cls = EJE_CLASSES[(i - 1) % len(EJE_CLASSES)]
 
         cards = []
-        for text in lineamientos:
+        for k, l in enumerate(lineamientos, 1):
+            # Compatibilidad: cada lineamiento puede ser string (legacy) o
+            # dict {texto, acciones} (nueva estructura enriquecida).
+            if isinstance(l, dict):
+                text = l.get("texto", "")
+                acciones = l.get("acciones", [])
+            else:
+                text = l
+                acciones = []
             icon = pick_icon(text)
-            variant = VARIANTS[slot % len(VARIANTS)]
-            flip = " strat--flip" if slot % 3 == 2 else ""
-            slot += 1
+            # Nueva clasificación por eje: cada card lleva strat--eje-N,
+            # que en el CSS por pilar define tono derivado del color del
+            # pilar (mismo hue, distinta saturación). Se elimina la
+            # rotación aleatoria v1..v7 que confundía la jerarquía.
             cards.append(
-                f'          <article class="strat strat--{variant}{flip}">\n'
+                f'          <article class="strat strat--eje-{i}">\n'
                 f'            <div class="strat__body">\n'
-                f'              {svg(icon)}\n'
+                f'              <div class="strat__head">\n'
+                f'                <span class="strat__index" aria-hidden="true">'
+                f'L{k:02d}</span>\n'
+                f'                {svg(icon)}\n'
+                f'              </div>\n'
                 f'              <p class="strat__text">{rich_text(text)}</p>\n'
+                f'{render_acciones(acciones)}'
                 f'            </div>\n'
                 f'          </article>'
             )
@@ -158,14 +206,14 @@ def build_ejes(ejes):
             if framing else ""
         )
         blocks.append(
-            f'      <section class="phase phase--{cls}">\n'
+            f'      <section class="phase phase--{cls} phase--eje-{i}">\n'
             f'        <header class="phase__head">\n'
             f'          <span class="phase__flag">{DIANA}'
             f'<small>Eje 0{i}</small>{esc(eje["name"])}</span>\n'
             f'          <span class="phase__n">{n} {word}</span>\n'
             f'        </header>\n'
             f'{framing_html}'
-            f'        <div class="phase__grid">\n'
+            f'        <div class="phase__grid phase__grid--stacked">\n'
             + "\n".join(cards) + "\n"
             f'        </div>\n'
             f'      </section>'
@@ -174,6 +222,14 @@ def build_ejes(ejes):
 
 def total_lineamientos(pilar):
     return sum(len(e.get("lineamientos", [])) for e in pilar.get("ejes", []))
+
+def total_acciones(pilar):
+    tot = 0
+    for e in pilar.get("ejes", []):
+        for l in e.get("lineamientos", []):
+            if isinstance(l, dict):
+                tot += len(l.get("acciones", []))
+    return tot
 
 TPL = """<!doctype html>
 <html lang="es">

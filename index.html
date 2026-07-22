@@ -76,10 +76,6 @@
       <span class="section-mark__num" aria-hidden="true">01</span>
       <p class="section-mark__eyebrow">Contexto</p>
       <h2 class="section-mark__title" id="titulo-datos">Datos de interés</h2>
-      <p class="section-mark__lead">
-        Lo esencial que debe conocer el sector empresarial sobre la Agenda
-        que orientará la política económica del país al 2040.
-      </p>
     </header>
 
     <div class="facts-grid">
@@ -97,8 +93,7 @@
         <p class="fact__text">
           Construida por el <strong>Grupo de Coordinación Estratégica
           Interinstitucional</strong> (MEF, MPCEI y Secretaría Nacional de
-          la Administración Pública), conformado por Acuerdo Interinstitucional
-          del 19 de agosto de 2025.
+          la Administración Pública).
         </p>
       </article>
       <article class="fact">
@@ -237,13 +232,6 @@
           y cerca de <strong>3 millones</strong> de personas afectadas.
         </span>
       </article>
-      <article class="stat-row">
-        <span class="stat-row__key">Demografía</span>
-        <span class="stat-row__val">20,2 M</span>
-        <span class="stat-row__ctx">
-          Habitantes proyectados para el año 2040.
-        </span>
-      </article>
     </div>
   </div>
 </section>
@@ -301,10 +289,11 @@
       <article class="build-card">
         <p class="build-card__eyebrow">Horizontes</p>
         <p class="build-card__title">Corto · mediano · largo</p>
-        <p class="build-card__text">
-          Corto plazo <strong>6-12 meses</strong>, mediano <strong>12-36
-          meses</strong>, largo <strong>+36 meses</strong>.
-        </p>
+        <ul class="build-card__list">
+          <li><span class="build-card__tag build-card__tag--corto">Corto</span> <strong>6–12 meses</strong></li>
+          <li><span class="build-card__tag build-card__tag--mediano">Mediano</span> <strong>12–36 meses</strong></li>
+          <li><span class="build-card__tag build-card__tag--largo">Largo</span> <strong>+36 meses</strong></li>
+        </ul>
       </article>
     </div>
   </div>
@@ -365,6 +354,7 @@
       <p class="section-mark__lead">
         La Agenda organiza su acción en cuatro pilares interdependientes,
         cada uno con sus ejes y lineamientos específicos.
+        <strong>Toque cada pilar para revisar sus ejes, lineamientos y las acciones de política que los aterrizan.</strong>
       </p>
     </header>
 
@@ -454,49 +444,70 @@
     </header>
 
     <div class="sectors-grid">
-      <article class="sector">
+      <article class="sector sector--agro">
+        <span class="sector__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 27V14"/><path d="M16 14c0-6 4-10 10-10 0 6-4 10-10 10z"/><path d="M16 20c0-4-3-7-9-7 0 4 3 7 9 7z"/></svg>
+        </span>
         <p class="sector__name">Agropecuario</p>
         <p class="sector__text">
           Cadena de valor extendida al agro rural con enfoque en
           productividad, formalización y encadenamiento con la agroindustria.
         </p>
       </article>
-      <article class="sector">
+      <article class="sector sector--agroind">
+        <span class="sector__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 27h24"/><path d="M6 27V15l7 4v-4l7 4v-4l7 4v8"/><path d="M11 22h2M17 22h2M23 22h2"/></svg>
+        </span>
         <p class="sector__name">Agroindustria</p>
         <p class="sector__text">
           Transformación con valor agregado, exportación y encadenamientos
           con producción primaria nacional.
         </p>
       </article>
-      <article class="sector">
+      <article class="sector sector--oil">
+        <span class="sector__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4c-5 6-8 11-8 15a8 8 0 0016 0c0-4-3-9-8-15z"/><path d="M12 18a4 4 0 004 4"/></svg>
+        </span>
         <p class="sector__name">Hidrocarburos</p>
         <p class="sector__text">
           Modernización contractual, delegación privada y esquemas
           asociativos con EP Petroecuador.
         </p>
       </article>
-      <article class="sector">
+      <article class="sector sector--elec">
+        <span class="sector__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3L7 18h7l-2 11 11-15h-7l2-11z"/></svg>
+        </span>
         <p class="sector__name">Electricidad</p>
         <p class="sector__text">
           Sector habilitante: apertura del mercado, participación privada
           en generación y transición energética.
         </p>
       </article>
-      <article class="sector">
+      <article class="sector sector--min">
+        <span class="sector__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 26l8-14 5 8 4-6 9 12z"/><circle cx="21" cy="8" r="2"/></svg>
+        </span>
         <p class="sector__name">Minería</p>
         <p class="sector__text">
           Sector intensivo en capital con horizontes largos que requiere
           marco regulatorio predecible.
         </p>
       </article>
-      <article class="sector">
+      <article class="sector sector--tur">
+        <span class="sector__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="12"/><path d="M22 10l-4 8-8 4 4-8z"/><circle cx="16" cy="16" r="1.5" fill="currentColor"/></svg>
+        </span>
         <p class="sector__name">Turismo</p>
         <p class="sector__text">
           Posicionamiento internacional, Marca País y experiencias de alto
           valor.
         </p>
       </article>
-      <article class="sector">
+      <article class="sector sector--manuf">
+        <span class="sector__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="4"/><path d="M16 3v4M16 25v4M3 16h4M25 16h4M7 7l3 3M22 22l3 3M25 7l-3 3M10 22l-3 3"/></svg>
+        </span>
         <p class="sector__name">Manufactura</p>
         <p class="sector__text">
           Reducción de costos logísticos, insumos competitivos y
@@ -504,6 +515,9 @@
         </p>
       </article>
       <article class="sector sector--transverse">
+        <span class="sector__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16h20M16 6v20"/><path d="M10 10l12 12M22 10L10 22"/></svg>
+        </span>
         <p class="sector__name">Transversales</p>
         <p class="sector__text">
           Acciones que no pertenecen a un sector específico y atraviesan a
@@ -579,8 +593,7 @@
       <p class="section-mark__eyebrow">Próximos pasos</p>
       <h2 class="section-mark__title" id="titulo-roadmap">De la visión a la acción</h2>
       <p class="section-mark__lead">
-        La publicación de la Agenda es el punto de partida de un proceso
-        interinstitucional, no su cierre. El documento define tres elementos
+        El documento define tres elementos
         de trabajo iniciales para pasar de los lineamientos a la implementación.
       </p>
     </header>
