@@ -1797,72 +1797,70 @@ section[id] { scroll-margin-top: calc(var(--nav-h) + 1rem); }
 
 /* =============================================================
    ACCIONES DE POLÍTICA Y VARIACIÓN DE TONO POR EJE
-   Editorial v3: cada eje dentro del pilar usa un tono derivado
-   del color base del pilar (mismo hue, distinta saturación).
-   Los lineamientos ahora despliegan sus acciones abajo con
-   chips de plazo cuando el documento las etiqueta.
+   Editorial v4: cards compactas en una sola columna. Las acciones
+   se muestran siempre visibles (sin acordeón, sin espacio muerto).
+   Cada eje del pilar tiene su tono (mismo hue, distinta saturación).
    ============================================================= */
 
-/* --- Grid vertical apilado para leer lineamiento + acciones -- */
+/* --- Layout apilado: 1 col legible, cards de altura natural --- */
 .phase__grid--stacked {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
-  margin-top: 20px;
-}
-@media (min-width: 900px) {
-  .phase__grid--stacked {
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-  }
+  gap: 14px;
+  margin-top: 18px;
 }
 
-/* --- Card de lineamiento en modo apilado (menos "flip" random,
-       más superficie legible, jerarquía por eje) --- */
+/* --- Card lineamiento: superficie clara, ribete por eje, denso -- */
 .phase__grid--stacked .strat {
-  min-height: auto;
-  padding: 22px 22px 20px;
-  border-radius: 14px;
+  min-height: 0;
+  padding: 16px 18px 14px;
+  border-radius: 12px;
   transform: none !important;
   background: var(--white);
   color: var(--ink);
-  border-left: 5px solid var(--eje-accent, var(--indigo));
-  box-shadow: 0 2px 8px rgba(23, 28, 92, 0.06);
+  border: 1px solid rgba(23, 28, 92, 0.08);
+  border-left: 4px solid var(--eje-accent, var(--indigo));
+  box-shadow: 0 1px 3px rgba(23, 28, 92, 0.04);
+  transition: box-shadow 0.15s ease;
 }
 .phase__grid--stacked .strat::after,
 .phase__grid--stacked .strat::before { content: none; }
 .phase__grid--stacked .strat:hover {
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 18px rgba(23, 28, 92, 0.1);
+  box-shadow: 0 4px 14px rgba(23, 28, 92, 0.08);
 }
 .phase__grid--stacked .strat__body {
   display: block;
   padding: 0;
 }
+
+/* Head del lineamiento: badge L01 + glyph pequeño alineados a la izquierda */
 .strat__head {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 8px;
+  margin-bottom: 6px;
 }
 .strat__index {
   font-family: "DM Sans", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--eje-accent, var(--indigo));
   background: var(--eje-tone, rgba(23, 28, 92, 0.06));
-  padding: 3px 8px;
-  border-radius: 5px;
+  padding: 2px 7px;
+  border-radius: 4px;
 }
 .phase__grid--stacked .strat__glyph {
-  width: 26px;
-  height: 26px;
-  opacity: 0.6;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
   color: var(--eje-accent, var(--indigo));
+  flex-shrink: 0;
 }
+
+/* Texto del lineamiento (título del card) */
 .phase__grid--stacked .strat__text {
-  font-size: 15.5px;
+  font-size: 14.5px;
   line-height: 1.45;
   color: var(--ink);
   margin: 0 0 4px;
@@ -1873,87 +1871,76 @@ section[id] { scroll-margin-top: calc(var(--nav-h) + 1rem); }
 }
 .phase__grid--stacked .strat__text span {
   font-weight: 400;
-  color: rgba(23, 28, 92, 0.78);
+  color: rgba(23, 28, 92, 0.75);
 }
 
-/* --- Bloque desplegable de acciones --- */
+/* --- Wrap acciones: sin acordeón, siempre visible, denso -------- */
 .acciones-wrap {
-  margin-top: 14px;
-  border-top: 1px dashed rgba(23, 28, 92, 0.15);
-  padding-top: 12px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(23, 28, 92, 0.08);
 }
-.acciones-wrap__head {
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--eje-accent, var(--indigo));
-  letter-spacing: 0.02em;
-  user-select: none;
-}
-.acciones-wrap__head::-webkit-details-marker { display: none; }
-.acciones-wrap__head::before {
-  content: "";
-  display: inline-block;
-  width: 8px; height: 8px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(45deg) translate(-2px, -2px);
-  transition: transform 0.15s ease;
-}
-.acciones-wrap[open] .acciones-wrap__head::before {
-  transform: rotate(-135deg) translate(-2px, -2px);
-}
-.acciones-wrap__count {
+.acciones-wrap__label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--eje-accent, var(--indigo));
+  margin: 0 0 8px;
+  opacity: 0.9;
 }
 .acciones {
   list-style: none;
-  margin: 12px 0 0;
+  margin: 0;
   padding: 0;
   display: grid;
-  gap: 8px;
+  gap: 6px;
 }
 .accion {
   display: grid;
-  grid-template-columns: 32px 1fr;
-  gap: 12px;
-  padding: 12px 14px;
-  background: var(--eje-tone, rgba(23, 28, 92, 0.04));
-  border-radius: 10px;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  padding: 8px 10px 8px 6px;
+  background: var(--eje-tone, rgba(23, 28, 92, 0.03));
+  border-radius: 7px;
   align-items: start;
 }
 .accion__num {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 11.5px;
   color: var(--eje-accent, var(--indigo));
-  letter-spacing: 0.04em;
-  padding-top: 2px;
+  letter-spacing: 0.03em;
+  padding-top: 3px;
+  text-align: right;
+  opacity: 0.85;
 }
+.accion__body { min-width: 0; }
 .accion__text {
   margin: 0;
-  font-size: 13.5px;
+  font-size: 13px;
   line-height: 1.5;
-  color: rgba(23, 28, 92, 0.86);
-  grid-column: 2;
+  color: rgba(23, 28, 92, 0.88);
 }
+.accion__titulo {
+  font-weight: 700;
+  color: var(--ink);
+  margin-right: 3px;
+}
+.accion__titulo::after { content: " ·"; opacity: 0.5; }
 .accion__chips {
-  grid-column: 2;
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 6px;
+  gap: 5px;
+  margin-top: 5px;
 }
 .accion__chip {
   font-family: "DM Sans", sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  padding: 3px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
   border-radius: 999px;
   background: rgba(23, 28, 92, 0.08);
   color: var(--ink);
@@ -1963,43 +1950,45 @@ section[id] { scroll-margin-top: calc(var(--nav-h) + 1rem); }
 .accion__chip--mediano { background: #D6ECFF; color: #1B4C7A; }
 .accion__chip--largo  { background: #DDEAD5; color: #2E5A24; }
 
+/* --- Responsive: en móvil aún más ajustado --- */
+@media (max-width: 640px) {
+  .phase__grid--stacked .strat { padding: 14px 14px 12px; }
+  .phase__grid--stacked .strat__text { font-size: 14px; }
+  .accion { grid-template-columns: 24px 1fr; gap: 8px; padding: 7px 9px 7px 4px; }
+  .accion__num { font-size: 10.5px; }
+  .accion__text { font-size: 12.5px; line-height: 1.45; }
+  .accion__titulo::after { content: ""; }
+  .accion__titulo { display: block; margin-bottom: 2px; }
+}
+
+/* --- Densidad del contenedor phase (sección de cada eje) -------- */
+.phase { margin-block: 28px; }
+.phase__framing { margin-block: 8px 4px; opacity: 0.85; }
+
 /* =============================================================
    Tonos por PILAR × EJE  (mismo hue, distinta saturación)
    ============================================================= */
 /* Pilar 1 — base naranja #FF863E */
-.obj-page--1 .phase--eje-1 { --eje-accent: #E56818; --eje-tone: #FFF0E4; }
-.obj-page--1 .phase--eje-2 { --eje-accent: #A2450A; --eje-tone: #FCE0CC; }
+.obj-page--1 .phase--eje-1 { --eje-accent: #E56818; --eje-tone: rgba(255, 134, 62, 0.08); }
+.obj-page--1 .phase--eje-2 { --eje-accent: #A2450A; --eje-tone: rgba(162, 69, 10, 0.08); }
 
 /* Pilar 2 — base teal #01C5B4 */
-.obj-page--2 .phase--eje-1 { --eje-accent: #008C7F; --eje-tone: #D6F5F1; }
-.obj-page--2 .phase--eje-2 { --eje-accent: #005B52; --eje-tone: #B7EBE4; }
+.obj-page--2 .phase--eje-1 { --eje-accent: #008C7F; --eje-tone: rgba(1, 197, 180, 0.08); }
+.obj-page--2 .phase--eje-2 { --eje-accent: #005B52; --eje-tone: rgba(0, 91, 82, 0.10); }
 
 /* Pilar 3 — base coral #F26A5A */
-.obj-page--3 .phase--eje-1 { --eje-accent: #B23F31; --eje-tone: #FDE1DC; }
-.obj-page--3 .phase--eje-2 { --eje-accent: #872C22; --eje-tone: #FBCEC5; }
-.obj-page--3 .phase--eje-3 { --eje-accent: #5C1D16; --eje-tone: #F9BAAF; }
+.obj-page--3 .phase--eje-1 { --eje-accent: #B23F31; --eje-tone: rgba(242, 106, 90, 0.08); }
+.obj-page--3 .phase--eje-2 { --eje-accent: #872C22; --eje-tone: rgba(135, 44, 34, 0.08); }
+.obj-page--3 .phase--eje-3 { --eje-accent: #5C1D16; --eje-tone: rgba(92, 29, 22, 0.09); }
 
 /* Pilar 4 — base amarillo #F5C042 */
-.obj-page--4 .phase--eje-1 { --eje-accent: #B48810; --eje-tone: #FFF2CC; }
-.obj-page--4 .phase--eje-2 { --eje-accent: #7A5A08; --eje-tone: #FCE4A1; }
+.obj-page--4 .phase--eje-1 { --eje-accent: #B48810; --eje-tone: rgba(245, 192, 66, 0.14); }
+.obj-page--4 .phase--eje-2 { --eje-accent: #7A5A08; --eje-tone: rgba(122, 90, 8, 0.10); }
 
-/* Flag del eje también toma el color del eje para reforzar jerarquía */
+/* Flag del eje toma el color del eje */
 .phase--eje-1 .phase__flag,
 .phase--eje-2 .phase__flag,
-.phase--eje-3 .phase__flag { background: var(--eje-accent); }
-
-/* Neutraliza los strat--v1..v7 legacy solo dentro del grid apilado
-   por si algún card viejo se cuela en cache. */
-.phase__grid--stacked .strat--v1,
-.phase__grid--stacked .strat--v2,
-.phase__grid--stacked .strat--v3,
-.phase__grid--stacked .strat--v4,
-.phase__grid--stacked .strat--v5,
-.phase__grid--stacked .strat--v6,
-.phase__grid--stacked .strat--v7 {
-  background: var(--white) !important;
-  color: var(--ink) !important;
-}
+.phase--eje-3 .phase__flag { background: var(--eje-accent); color: var(--white); }
 
 /* =============================================================
    HORIZONTES: 3 bullets con tags de color (build-card__list)

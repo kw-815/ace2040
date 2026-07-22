@@ -128,37 +128,43 @@ def pager(n):
     return "\n".join(parts)
 
 def render_acciones(acciones):
-    """Renderiza la lista de acciones bajo un lineamiento con chips de plazo."""
+    """Renderiza la lista de acciones bajo un lineamiento (sin accordion)."""
     if not acciones:
         return ""
     items = []
     for j, a in enumerate(acciones, 1):
+        titulo = a.get("titulo") if isinstance(a, dict) else None
         texto = a.get("texto", "") if isinstance(a, dict) else a
         plazos = a.get("plazos", []) if isinstance(a, dict) else []
         chips = ""
         if plazos:
-            chip_html = " ".join(
+            chip_html = "".join(
                 f'<span class="accion__chip accion__chip--{p}">{p.capitalize()} plazo</span>'
                 for p in plazos
             )
-            chips = f'\n                  <div class="accion__chips">{chip_html}</div>'
+            chips = f'<div class="accion__chips">{chip_html}</div>'
+        titulo_html = (
+            f'<span class="accion__titulo">{esc(titulo)}</span> '
+            if titulo else ""
+        )
         items.append(
             f'                <li class="accion">\n'
             f'                  <span class="accion__num" aria-hidden="true">{j:02d}</span>\n'
-            f'                  <p class="accion__text">{esc(texto)}</p>'
-            f'{chips}\n'
+            f'                  <div class="accion__body">\n'
+            f'                    <p class="accion__text">{titulo_html}{esc(texto)}</p>\n'
+            f'                    {chips}\n'
+            f'                  </div>\n'
             f'                </li>'
         )
+    n = len(acciones)
+    word = "acciones" if n != 1 else "acción"
     return (
-        '              <details class="acciones-wrap" open>\n'
-        '                <summary class="acciones-wrap__head">\n'
-        f'                  <span class="acciones-wrap__count">{len(acciones)} '
-        f'{"acciones" if len(acciones) != 1 else "acción"} de política</span>\n'
-        '                </summary>\n'
-        '                <ol class="acciones">\n'
+        f'              <div class="acciones-wrap">\n'
+        f'                <p class="acciones-wrap__label">{n} {word} de política</p>\n'
+        f'                <ol class="acciones">\n'
         + "\n".join(items) + "\n"
-        '                </ol>\n'
-        '              </details>\n'
+        f'                </ol>\n'
+        f'              </div>\n'
     )
 
 def build_ejes(ejes):

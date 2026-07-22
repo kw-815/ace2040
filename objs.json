@@ -11,15 +11,18 @@
             "texto": "Fomentar la apertura, simplificación regulatoria y optimización del marco contractual para la atracción de inversión privada.",
             "acciones": [
               {
-                "texto": "Modernización contractual en hidrocarburos, mediante la actualización la base legal para las operaciones del sector con el fin de incorporar modelos asociativos avanzados entre EP Petroecuador y operadores privados, agilizando los cronogramas de licitación y los esquemas de delegación directa en transporte, refinación y almacenamiento",
+                "titulo": "Modernización contractual en hidrocarburos",
+                "texto": "mediante la actualización la base legal para las operaciones del sector con el fin de incorporar modelos asociativos avanzados entre EP Petroecuador y operadores privados, agilizando los cronogramas de licitación y los esquemas de delegación directa en transporte, refinación y almacenamiento",
                 "plazos": []
               },
               {
-                "texto": "Apertura y licitación eficiente del mercado eléctrico, a través de la implementación esquemas de licitación eléctrica basados en anualidades, revisar los límites a la participación de capital privado en empresas mixtas y viabilizar pilotos de comercializadoras independientes",
+                "titulo": "Apertura y licitación eficiente del mercado eléctrico",
+                "texto": "a través de la implementación esquemas de licitación eléctrica basados en anualidades, revisar los límites a la participación de capital privado en empresas mixtas y viabilizar pilotos de comercializadoras independientes",
                 "plazos": []
               },
               {
-                "texto": "Eficiencia normativa en suministros agropecuarios, eliminando barreras de acceso a materias primas competitivas mediante reformas sectoriales específicas, la simplificación del Sistema Andino de Franja de Precios y el robustecimiento de los controles de importaciones para proteger la producción local en caso de competencia desleal",
+                "titulo": "Eficiencia normativa en suministros agropecuarios",
+                "texto": "eliminando barreras de acceso a materias primas competitivas mediante reformas sectoriales específicas, la simplificación del Sistema Andino de Franja de Precios y el robustecimiento de los controles de importaciones para proteger la producción local en caso de competencia desleal",
                 "plazos": []
               }
             ]
@@ -28,15 +31,18 @@
             "texto": "Fortalecer la institucionalidad del modelo de Asociación Público-Privada (APP) y perfeccionar los marcos contractuales para una delegación estratégica, inclusiva y sostenible.",
             "acciones": [
               {
-                "texto": "Financiamiento de la preinversión, mediante el fortalecimiento de la institucionalidad técnica de estructuración de APP mediante el establecimiento de asignaciones presupuestarias dedicadas a estudios de prefactibilidad y factibilidad integral",
+                "titulo": "Financiamiento de la preinversión",
+                "texto": "mediante el fortalecimiento de la institucionalidad técnica de estructuración de APP mediante el establecimiento de asignaciones presupuestarias dedicadas a estudios de prefactibilidad y factibilidad integral",
                 "plazos": []
               },
               {
-                "texto": "Modelos de participación e inclusión local, a través del perfeccionamiento de los marcos contractuales de delegación incorporando mecanismos obligatorios de participación comunitaria y esquemas asociativos locales que integren mano de obra territorial",
+                "titulo": "Modelos de participación e inclusión local",
+                "texto": "a través del perfeccionamiento de los marcos contractuales de delegación incorporando mecanismos obligatorios de participación comunitaria y esquemas asociativos locales que integren mano de obra territorial",
                 "plazos": []
               },
               {
-                "texto": "Acompañamiento y mitigación de riesgos, mediante el soporte técnico y metodológico continuo en los ministerios sectoriales y empresas públicas ejecutoras para el monitoreo periódico de compromisos y la reducción preventiva de contingencias fiscales",
+                "titulo": "Acompañamiento y mitigación de riesgos",
+                "texto": "mediante el soporte técnico y metodológico continuo en los ministerios sectoriales y empresas públicas ejecutoras para el monitoreo periódico de compromisos y la reducción preventiva de contingencias fiscales",
                 "plazos": []
               }
             ]
@@ -45,15 +51,18 @@
             "texto": "Garantizar la continuidad y eficiencia de la gestión pública mediante el fortalecimiento de la carrera administrativa basada en el mérito, la estabilidad técnica y la profesionalización del servicio ciudadano.",
             "acciones": [
               {
-                "texto": "Incorporación de competencias globales y especialización técnica, mediante el diseño e implementación de procesos de selección basados estrictamente en el mérito para captar perfiles de alta gerencia y dirección con experiencia en mercados internacionales; esto incluye la integración de expertos de alto nivel en las entidades rectoras y de control sectorial para dotar de solidez estratégica a la toma de decisiones y a la fiscalización del Estado",
+                "titulo": "Incorporación de competencias globales y especialización técnica",
+                "texto": "mediante el diseño e implementación de procesos de selección basados estrictamente en el mérito para captar perfiles de alta gerencia y dirección con experiencia en mercados internacionales; esto incluye la integración de expertos de alto nivel en las entidades rectoras y de control sectorial para dotar de solidez estratégica a la toma…",
                 "plazos": []
               },
               {
-                "texto": "Fortalecimiento institucional y concursos transparentes, promoviendo una reestructuración profunda en los niveles gerenciales de las empresas públicas estatales, reduciendo la rotación de los cargos de alta dirección a través de períodos estables y esquemas transparentes de contratación",
+                "titulo": "Fortalecimiento institucional y concursos transparentes",
+                "texto": "promoviendo una reestructuración profunda en los niveles gerenciales de las empresas públicas estatales, reduciendo la rotación de los cargos de alta dirección a través de períodos estables y esquemas transparentes de contratación",
                 "plazos": []
               },
               {
-                "texto": "Profesionalización y valorización de competencias, garantizando la estabilidad de técnicos y mandos medios, implementando programas permanentes de capacitación y actualización técnica en estrecha articulación con la academia",
+                "titulo": "Profesionalización y valorización de competencias",
+                "texto": "garantizando la estabilidad de técnicos y mandos medios, implementando programas permanentes de capacitación y actualización técnica en estrecha articulación con la academia",
                 "plazos": []
               }
             ]
@@ -62,15 +71,18 @@
             "texto": "Implementar estrategias de desarrollo sectorial para atraer capitales y potenciar la competitividad.",
             "acciones": [
               {
-                "texto": "Planificación y focalización territorial, orientado a la identificación de sectores, territorios o zonas con mayor potencial productivo",
+                "titulo": "Planificación y focalización territorial",
+                "texto": "orientado a la identificación de sectores, territorios o zonas con mayor potencial productivo",
                 "plazos": []
               },
               {
-                "texto": "Marco regulatorio e incentivos tributarios, destinados a diseñar, ajustar o fortalecer regímenes normativos especiales para sectores específicos",
+                "titulo": "Marco regulatorio e incentivos tributarios",
+                "texto": "destinados a diseñar, ajustar o fortalecer regímenes normativos especiales para sectores específicos",
                 "plazos": []
               },
               {
-                "texto": "Mecanismos habilitantes para atracción de inversiones, que desarrollen condiciones operativas esenciales para la competitividad y respondan a las características de cada sector",
+                "titulo": "Mecanismos habilitantes para atracción de inversiones",
+                "texto": "que desarrollen condiciones operativas esenciales para la competitividad y respondan a las características de cada sector",
                 "plazos": []
               }
             ]
@@ -79,15 +91,18 @@
             "texto": "Modernizar la regulación estructural y actualizar los marcos legales para la adecuación competitiva de los mercados.",
             "acciones": [
               {
-                "texto": "Renovación de marcos orgánicos, elaborar y tramitar de forma participativa el proyecto de la nueva Ley Orgánica de Desarrollo y Fomento Productivo Agropecuario, incorporando componentes de I+D, educación rural y competitividad territorial con enfoque de exportación, así como actualizar leyes y reglamentos en sectores estratégicos que apalancan crecimiento",
+                "titulo": "Renovación de marcos orgánicos",
+                "texto": "elaborar y tramitar de forma participativa el proyecto de la nueva Ley Orgánica de Desarrollo y Fomento Productivo Agropecuario, incorporando componentes de I+D, educación rural y competitividad territorial con enfoque de exportación, así como actualizar leyes y reglamentos en sectores estratégicos que apalancan crecimiento",
                 "plazos": []
               },
               {
-                "texto": "Flexibilidad en el ciclo empresarial, emitir reglamentos e instructivos técnicos para la liquidación, simplificación y cierre formal expedito de empresas que cumplan con sus obligaciones legales ante la Superintendencia de Compañías y el Servicio de Rentas Internas (SRI)",
+                "titulo": "Flexibilidad en el ciclo empresarial",
+                "texto": "emitir reglamentos e instructivos técnicos para la liquidación, simplificación y cierre formal expedito de empresas que cumplan con sus obligaciones legales ante la Superintendencia de Compañías y el Servicio de Rentas Internas (SRI)",
                 "plazos": []
               },
               {
-                "texto": "Análisis de impacto regulatorio (AIR), institucionalizar la aplicación del AIR en las agencias del Estado para asegurar que las normativas secundarias sean proporcionales, eficientes, no discrecionales y orientadas a la productividad de los mercados",
+                "titulo": "Análisis de impacto regulatorio (AIR)",
+                "texto": "institucionalizar la aplicación del AIR en las agencias del Estado para asegurar que las normativas secundarias sean proporcionales, eficientes, no discrecionales y orientadas a la productividad de los mercados",
                 "plazos": []
               }
             ]
@@ -96,15 +111,18 @@
             "texto": "Optimizar los contratos de inversión redefiniendo su alcance, garantizando el control normativo secundario ante desvíos y auditando los compromisos definidos.",
             "acciones": [
               {
-                "texto": "Estandarización y modificación dinámica, establecer criterios estandarizados y transparentes para la aprobación de contratos, habilitando mediante normativa secundaria la modificación dinámica de acuerdos (ajustes y penalidades proporcionales) ante desviaciones de metas",
+                "titulo": "Estandarización y modificación dinámica",
+                "texto": "establecer criterios estandarizados y transparentes para la aprobación de contratos, habilitando mediante normativa secundaria la modificación dinámica de acuerdos (ajustes y penalidades proporcionales) ante desviaciones de metas",
                 "plazos": []
               },
               {
-                "texto": "Transparencia y reorientación del sujeto pasivo, redefinir el alcance de los contratos priorizando el perfil de cumplimiento e historial del sujeto pasivo y no únicamente el sector económico, publicando de forma transparente los términos y beneficios bajo estándares internacionales",
+                "titulo": "Transparencia y reorientación del sujeto pasivo",
+                "texto": "redefinir el alcance de los contratos priorizando el perfil de cumplimiento e historial del sujeto pasivo y no únicamente el sector económico, publicando de forma transparente los términos y beneficios bajo estándares internacionales",
                 "plazos": []
               },
               {
-                "texto": "Desarrollo legislativo de largo plazo, diseñar y tramitar una nueva Ley de Contratos de Inversión orientada a la atracción de inversión productiva sostenible, introduciendo esquemas simplificados e incentivos específicos para el sector de las MIPYMES",
+                "titulo": "Desarrollo legislativo de largo plazo",
+                "texto": "diseñar y tramitar una nueva Ley de Contratos de Inversión orientada a la atracción de inversión productiva sostenible, introduciendo esquemas simplificados e incentivos específicos para el sector de las MIPYMES",
                 "plazos": [
                   "largo"
                 ]
@@ -121,15 +139,18 @@
             "texto": "Fortalecer la gobernanza institucional y la articulación técnica de las entidades públicas para asegurar la aplicación efectiva de incentivos, la protección de activos productivos y la creación de instancias permanentes de acompañamiento estratégico a los proyectos de inversión.",
             "acciones": [
               {
-                "texto": "Comisiones de acompañamiento estratégico, conformar mesas permanentes de tomadores de decisión con base legal clara para evaluar, priorizar y guiar técnicamente la ejecución y vigencia de los proyectos de inversión",
+                "titulo": "Comisiones de acompañamiento estratégico",
+                "texto": "conformar mesas permanentes de tomadores de decisión con base legal clara para evaluar, priorizar y guiar técnicamente la ejecución y vigencia de los proyectos de inversión",
                 "plazos": []
               },
               {
-                "texto": "Políticas de Estado y acuerdos nacionales, diseñar e institucionalizar políticas de Estado sectoriales construidas con la academia y gremios, integrando esquemas de formación dual y la creación de carreras técnicas específicas requeridas",
+                "titulo": "Políticas de Estado y acuerdos nacionales",
+                "texto": "diseñar e institucionalizar políticas de Estado sectoriales construidas con la academia y gremios, integrando esquemas de formación dual y la creación de carreras técnicas específicas requeridas",
                 "plazos": []
               },
               {
-                "texto": "Gobernanza institucional, posicionar los sectores con mayor potencial para fortalecer el crecimiento económico como políticas de Estado a través del blindaje reglamentario de sus incentivos de largo plazo y el fortalecimiento planificación territorial para reducir los riesgos del capital privado",
+                "titulo": "Gobernanza institucional",
+                "texto": "posicionar los sectores con mayor potencial para fortalecer el crecimiento económico como políticas de Estado a través del blindaje reglamentario de sus incentivos de largo plazo y el fortalecimiento planificación territorial para reducir los riesgos del capital privado",
                 "plazos": [
                   "largo"
                 ]
@@ -140,11 +161,13 @@
             "texto": "Fortalecer la institucionalidad de control y justicia para salvaguardar los activos productivos.",
             "acciones": [
               {
-                "texto": "Especialización y celeridad mercantil, reformar y fortalecer las capacidades operativas de la Función Judicial en coordinación con el Consejo de la Judicatura para acelerar de forma prioritaria el despacho de litigios comerciales",
+                "titulo": "Especialización y celeridad mercantil",
+                "texto": "reformar y fortalecer las capacidades operativas de la Función Judicial en coordinación con el Consejo de la Judicatura para acelerar de forma prioritaria el despacho de litigios comerciales",
                 "plazos": []
               },
               {
-                "texto": "Competencias institucionales, establecer o replantear de manera específica las competencias del gobierno central en determinados sectores estratégicos para asegurar coherencia, agilidad y seguridad jurídica",
+                "titulo": "Competencias institucionales",
+                "texto": "establecer o replantear de manera específica las competencias del gobierno central en determinados sectores estratégicos para asegurar coherencia, agilidad y seguridad jurídica",
                 "plazos": []
               }
             ]
@@ -153,11 +176,13 @@
             "texto": "Garantizar la previsibilidad jurídica del entorno de negocios, asegurando certidumbre tributaria y contractual para la atracción de capitales.",
             "acciones": [
               {
-                "texto": "Estandarización fiscal territorial, diseñar un marco regulatorio único a nivel nacional que homologue criterios y establezca parámetros técnicos a las tasas impositivas y de control aplicadas de forma heterogénea por los GAD",
+                "titulo": "Estandarización fiscal territorial",
+                "texto": "diseñar un marco regulatorio único a nivel nacional que homologue criterios y establezca parámetros técnicos a las tasas impositivas y de control aplicadas de forma heterogénea por los GAD",
                 "plazos": []
               },
               {
-                "texto": "Fortalecimiento de la gobernanza financiera de los sectores y entidades, modernizar los procesos de recaudación y viabilizar el uso de fideicomisos mercantiles para la administración técnica de los ingresos sectoriales",
+                "titulo": "Fortalecimiento de la gobernanza financiera de los sectores y entidades",
+                "texto": "modernizar los procesos de recaudación y viabilizar el uso de fideicomisos mercantiles para la administración técnica de los ingresos sectoriales",
                 "plazos": []
               }
             ]
@@ -166,7 +191,8 @@
             "texto": "Garantizar la previsibilidad normativa, institucionalizar la seguridad jurídica de las inversiones y modernizar los sistemas de arbitraje y resolución de conflictos.",
             "acciones": [
               {
-                "texto": "innovar el ecosistema de mediación y arbitraje del país, incorporando figuras jurídicas de vanguardia internacional que doten al inversionista de seguridad jurídica y brinden transparencia de los procesos, a través de profundizar el arbitraje de emergencia, como un mecanismo ágil para dictar medidas cautelares y resolver contingencias comerciales urgentes",
+                "titulo": null,
+                "texto": "innovar el ecosistema de mediación y arbitraje del país, incorporando figuras jurídicas de vanguardia internacional que doten al inversionista de seguridad jurídica y brinden transparencia de los procesos, a través de profundizar el arbitraje de emergencia,…",
                 "plazos": []
               }
             ]
@@ -175,11 +201,13 @@
             "texto": "Optimizar el Sistema Nacional de Contratación Pública mediante la reestructuración integral del Servicio Nacional de Contratación Pública (SERCOP) y la modernización de su plataforma tecnológica.",
             "acciones": [
               {
-                "texto": "Modernización institucional y tecnológica, promover la reforma integral y reestructuración orgánica del SERCOP mediante la actualización de sus plataformas digitales para agilizar la tramitología de compras y optimizar la transparencia del mercado público",
+                "titulo": "Modernización institucional y tecnológica",
+                "texto": "promover la reforma integral y reestructuración orgánica del SERCOP mediante la actualización de sus plataformas digitales para agilizar la tramitología de compras y optimizar la transparencia del mercado público",
                 "plazos": []
               },
               {
-                "texto": "Estandarización y articulación productiva, desarrollar, en alianza con la academia y gremios especializados, términos de referencia (TDR) estandarizados, repositorios técnicos y plantillas que faciliten el acceso transparente de las MIPYMES a los procesos de provisión estatal",
+                "titulo": "Estandarización y articulación productiva",
+                "texto": "desarrollar, en alianza con la academia y gremios especializados, términos de referencia (TDR) estandarizados, repositorios técnicos y plantillas que faciliten el acceso transparente de las MIPYMES a los procesos de provisión estatal",
                 "plazos": []
               }
             ]
@@ -200,19 +228,23 @@
             "texto": "Fortalecer la administración tributaria y la formalización económica mediante interoperabilidad, transparencia, seguimiento de procesos y mecanismos que amplíen la base tributaria.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Incentivos para el uso de pagos digitales que busquen promover medios de pago electrónicos a fin de fomentar la trazabilidad, transparencia y a su vez, reducir los niveles de informalidad",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Simplificación operativa del cumplimiento tributario enfocada en reducir la carga administrativa, facilitar el cumplimiento y mejorar la experiencia del contribuyente",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Transparencia, seguimiento y control de trámites tributarios que busca mejorar la trazabilidad, transparencia y eficiencia de los procesos administrativos tributarios",
                 "plazos": []
               },
               {
-                "texto": "Formalización tributaria e interoperabilidad orientada a fortalecer la claridad del sistema, ampliar la base tributaria y promover la formalización. Estas acciones son particularmente importantes en sectores con altos niveles de informalidad o con predominio de pequeños productores y emprendimientos, como el agropecuario, agroindustria y manufactura donde muchas unidades productivas operan cerca de la frontera entre formalidad e informalidad",
+                "titulo": null,
+                "texto": "Formalización tributaria e interoperabilidad orientada a fortalecer la claridad del sistema, ampliar la base tributaria y promover la formalización. Estas acciones son particularmente importantes en sectores con altos niveles de informalidad o con predominio de pequeños productores y emprendimientos, como el agropecuario,…",
                 "plazos": []
               }
             ]
@@ -221,15 +253,18 @@
             "texto": "Fortalecer la gobernanza fiscal sectorial y la gestión transparente de fondos y recursos estratégicos, asegurando coordinación institucional, asignación eficiente y rendición de cuentas.",
             "acciones": [
               {
-                "texto": "Gobernanza y operación de fondos estratégicos, que busca asegurar que los fondos sectoriales o estratégicos tengan reglas claras de gobernanza, planificación, ejecución, seguimiento y rendición de cuentas",
+                "titulo": "Gobernanza y operación de fondos estratégicos",
+                "texto": "que busca asegurar que los fondos sectoriales o estratégicos tengan reglas claras de gobernanza, planificación, ejecución, seguimiento y rendición de cuentas",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Fondos, mecanismos de financiamiento y retorno territorial de recurso, que comprende acciones tendientes a movilizar recursos hacia inversión productiva, sostenibilidad, infraestructura y desarrollo territorial, asegurando que los beneficios generados por los sectores estratégicos retornen a sus zonas de influencia",
                 "plazos": []
               },
               {
-                "texto": "Fortalecimiento institucional y racionalización de cargas sectoriales, enfocadas en mejorar la capacidad del Estado para diseñar, coordinar y supervisar la política fiscal sectorial. Esta dimensión es transversal porque vincula la política fiscal con la confianza territorial, la coordinación institucional y la capacidad de traducir ingresos sectoriales en desarrollo concreto",
+                "titulo": "Fortalecimiento institucional y racionalización de cargas sectoriales",
+                "texto": "enfocadas en mejorar la capacidad del Estado para diseñar, coordinar y supervisar la política fiscal sectorial. Esta dimensión es transversal porque vincula la política fiscal con la confianza territorial, la coordinación institucional y la capacidad de traducir ingresos sectoriales en desarrollo concreto",
                 "plazos": []
               }
             ]
@@ -238,7 +273,8 @@
             "texto": "Fortalecer la sostenibilidad fiscal subnacional para la gestión eficiente de las finanzas públicas.",
             "acciones": [
               {
-                "texto": "Para consolidar la sostenibilidad fiscal subnacional y la eficiencia de las finanzas públicas, el Estado articulará su gestión en la optimización técnico-productiva del presupuesto de capital para multiplicar el impacto del desarrollo local. ![Página 65 del documento original](pages/page-065.jpg) --- ## Página 66",
+                "titulo": null,
+                "texto": "Para consolidar la sostenibilidad fiscal subnacional y la eficiencia de las finanzas públicas, el Estado articulará su gestión en la optimización técnico-productiva del presupuesto de capital para multiplicar el impacto del desarrollo local",
                 "plazos": []
               }
             ]
@@ -247,7 +283,8 @@
             "texto": "Impulsar la progresividad, equidad y eficiencia del sistema tributario, preservando su contribución a la sostenibilidad fiscal y al crecimiento económico.",
             "acciones": [
               {
-                "texto": "El alcance de este lineamiento consiste en revisar los regímenes tributarios aplicables a distintos tipos de contribuyentes, con el fin de establecer trayectorias graduales entre categorías y reducir distorsiones asociadas a umbrales rígidos. La acción apunta a rediseñar los criterios de transición, las obligaciones formales y la carga efectiva de los ![Página 66 del documento original](pages/page-066.jpg) --- ## Página 67 contribuyentes para que el paso hacia regímenes de mayor complejidad sea progresivo, previsible y administrativamente viable. Esto implica evaluar escalas, tasas, beneficios, requisitos de información y costos de cumplimiento, de manera que la formalización inicial no se convierta posteriormente en un obstáculo para crecer. Con ello, se busca avanzar hacia un sistema tributario más justo y funcional, donde las empresas no sean penalizadas por crecer y donde la ampliación de la base tributaria ocurra junto con el desarrollo del tejido productivo. ### EJE 2.2. SISTEMA TRIBUTARIO EFICIENTE PARA LA INVERSIÓN Y LA PRODUCTIVIDAD Fundamento: Un sistema tributario pro-crecimiento debe contribuir simultáneamente a la sostenibilidad fiscal, la equidad y la competitividad de la economía. Para ello, la estructura tributaria debe ser clara, previsible, eficiente y consistente con los objetivos de inversión, formalización, productividad y generación de empleo. La política tributaria no solo cumple una función recaudatoria; también incide en las decisiones de inversión, en la asignación de recursos entre sectores, en los costos de producción y en la capacidad de las empresas para crecer, innovar y competir 28. Desde esta perspectiva, la calidad del régimen tributario es un componente central del entorno habilitante para el desarrollo productivo. Un sistema con normas dispersas, trámites complejos, cargas distorsivas o incentivos poco focalizados puede elevar los costos de cumplimiento, reducir la previsibilidad de las decisiones empresariales y limitar la inversión privada. Por el contrario, un marco tributario simple, transparente y jurídicamente seguro contribuye a reducir incertidumbre, mejorar la confianza de los inversionistas y facilitar la formalización de actividades económicas29. Este eje plantea un enfoque tributario pro-crecimiento que requiere revisar las cargas fiscales y reducir las distorsiones que afectan la inversión, la liquidez, la competitividad y el crecimiento empresarial. La optimización del régimen tributario debe orientarse a mejorar la eficiencia del sistema, evitar penalizaciones al crecimiento de las empresas, reducir barreras a la formalización y generar condiciones más favorables para la inversión productiva. En este marco, los incentivos fiscales y el gasto tributario deben ser evaluados bajo criterios de focalización, simplicidad, transparencia y resultados verificables. Los beneficios tributarios orientados al desarrollo productivo deben diferenciarse de aquellos de carácter social y vincularse a objetivos concretos, tales como inversión, empleo formal, 28 Brys, B. et al. (2016), “Tax Design for Inclusive Economic Growth”, OECD Taxation Working Papers, No. 26, OECD Publishing, Paris. Disponible en: https://doi.org/10.1787/5jlv74ggk0g7-en 29 OECD (2025), Enhancing Simplicity to Foster Tax Certainty and Growth: OECD Report to the G20, OECD Publishing, Paris. Disponible en: https:// doi.org/10.1787/086f71ab-en ![Página 67 del documento original](pages/page-067.jpg) --- ## Página 68 innovación, productividad, encadenamientos productivos o sostenibilidad ambiental. De esta manera, los incentivos dejan de ser únicamente renuncias fiscales y se convierten en instrumentos estratégicos de política pública, sujetos a evaluación y rendición de cuentas30. El fundamento de este eje radica en que una estructura tributaria mejor diseñada, con menos distorsiones y con incentivos focalizados en resultados, puede fortalecer la sostenibilidad fiscal y, al mismo tiempo, contribuir a dinamizar la inversión privada, elevar la productividad y ampliar las oportunidades de crecimiento económico. Lineamientos:",
+                "titulo": null,
+                "texto": "revisar los regímenes tributarios aplicables a distintos tipos de contribuyentes, con el fin de establecer trayectorias graduales entre categorías y reducir distorsiones asociadas a umbrales rígidos. La acción apunta a rediseñar los criterios de transición, las obligaciones formales y la carga efectiva de los",
                 "plazos": []
               }
             ]
@@ -262,7 +299,8 @@
             "texto": "Fortalecer la seguridad jurídica y simplificar el sistema tributario mediante reglas claras, estabilidad normativa y socialización de reformas.",
             "acciones": [
               {
-                "texto": "Las acciones comprenden la simplificación de trámites fiscales y aduaneros; la mejora de la eficiencia operativa del sistema tributario mediante facilidades de pago, reducción de tiempos de respuesta y optimización de la recaudación; y la socialización estratégica de reformas tributarias con los sectores productivos. En conjunto, este lineamiento busca construir un entorno tributario más simple, transparente y predecible, que reduzca la incertidumbre regulatoria, facilite el cumplimiento de obligaciones fiscales y aduaneras, mejore la relación entre el Estado y los contribuyentes, y contribuya a fortalecer la competitividad de los sectores productivos. ![Página 69 del documento original](pages/page-069.jpg) --- ## Página 70",
+                "titulo": null,
+                "texto": "Las acciones comprenden la simplificación de trámites fiscales y aduaneros; la mejora de la eficiencia operativa del sistema tributario mediante facilidades de pago, reducción de tiempos de respuesta y optimización de la recaudación; y la socialización estratégica de reformas tributarias con los sectores productivos.…",
                 "plazos": []
               }
             ]
@@ -271,10 +309,12 @@
             "texto": "Mejorar la calidad, eficiencia y orientación estratégica de los instrumentos fiscales y del gasto público.",
             "acciones": [
               {
-                "texto": "Orientar los instrumentos fiscales y presupuestarios hacia inversiones estratégicas, mecanismos de ejecución eficiente y esquemas tarifarios sostenibles que dinamicen la actividad productiva",
+                "titulo": "Orientar los instrumentos fiscales y presupuestarios hacia inversiones estratégicas",
+                "texto": "mecanismos de ejecución eficiente y esquemas tarifarios sostenibles que dinamicen la actividad productiva",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Fortalecer la calidad del gasto público priorizando la asignación de recursos hacia proyectos con mayor impacto social, económico y territorial",
                 "plazos": []
               }
@@ -284,11 +324,13 @@
             "texto": "Optimizar el gasto tributario y los incentivos fiscales mediante criterios de focalización, temporalidad, neutralidad y evaluación de resultados verificables en inversión, empleo, productividad y sostenibilidad.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Racionalizar los incentivos fiscales mediante el ordenamiento del sistema de incentivos para que sea previsible, temporal, evaluable y orientado a resultados verificables, evitando discrecionalidad, competencia desleal y distorsiones",
                 "plazos": []
               },
               {
-                "texto": "Revisar y orientar los incentivos para que funcionen como instrumento para dinamizar inversión, empleo, productividad, innovación, modernización tecnológica y diversificación productiva. En sí, las acciones buscan que los incentivos funcionen como herramientas de política productiva sujetas a resultados, y no como beneficios permanentes desvinculados de la generación de valor económico y social",
+                "titulo": null,
+                "texto": "Revisar y orientar los incentivos para que funcionen como instrumento para dinamizar inversión, empleo, productividad, innovación, modernización tecnológica y diversificación productiva. En sí, las acciones buscan que los incentivos funcionen como herramientas de política productiva sujetas a resultados,…",
                 "plazos": []
               }
             ]
@@ -297,11 +339,13 @@
             "texto": "Optimizar el régimen tributario y arancelario para fortalecer la competitividad y la inversión productiva, mediante la revisión de cargas fiscales, aranceles, retenciones y tributos distorsivos que afectan el crecimiento.",
             "acciones": [
               {
-                "texto": "Tratamiento tributario preferencial para insumos, bienes de capital y tecnología, con la finalidad de buscar alternativas para reducir el costo de acceso a insumos, maquinaria, bienes de capital y tecnología necesarios para modernizar la producción y mejorar la competitividad",
+                "titulo": "Tratamiento tributario preferencial para insumos",
+                "texto": "bienes de capital y tecnología, con la finalidad de buscar alternativas para reducir el costo de acceso a insumos, maquinaria, bienes de capital y tecnología necesarios para modernizar la producción y mejorar la competitividad",
                 "plazos": []
               },
               {
-                "texto": "Revisión de impuestos, deducibilidades, devoluciones y retenciones tales como el ICE, ISD y aranceles preferenciales, siempre bajo criterios de impacto fiscal, competitividad, y contribución a la inversión. La finalidad es reducir costos que afectan la producción sin comprometer la sostenibilidad de las finanzas públicas ni generar beneficios injustificados",
+                "titulo": "Revisión de impuestos",
+                "texto": "deducibilidades, devoluciones y retenciones tales como el ICE, ISD y aranceles preferenciales, siempre bajo criterios de impacto fiscal, competitividad, y contribución a la inversión. La finalidad es reducir costos que afectan la producción sin comprometer la sostenibilidad de las finanzas públicas ni generar beneficios injustificados",
                 "plazos": []
               }
             ]
@@ -322,14 +366,17 @@
             "texto": "Alinear la oferta de educación técnica, tecnológica y de formación superior con los requerimientos de la matriz productiva, institucionalizando la formación dual y los esquemas de pasantías para garantizar la inserción laboral efectiva y la pertinencia del talento calificado.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Análisis de pertinencia que permita sincronizar los programas de estudio con la realidad del aparato productivo nacional, abarcando desde la actualización curricular hasta la incorporación de especialidades como la metalurgia avanzada y las energías renovables",
                 "plazos": []
               },
               {
-                "texto": "Implementación de modelos de aprendizaje práctico, integrando esfuerzos para promover la formación dual y los esquemas de pasantías a través del diálogo entre el Estado, la academia, los gremios y el sector empresarial",
+                "titulo": "Implementación de modelos de aprendizaje práctico",
+                "texto": "integrando esfuerzos para promover la formación dual y los esquemas de pasantías a través del diálogo entre el Estado, la academia, los gremios y el sector empresarial",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Actualización de la oferta académica para que vaya de la mano con la especialización requerida del talento humano y de los equipos docentes",
                 "plazos": []
               }
@@ -339,15 +386,18 @@
             "texto": "Consolidar el sistema nacional de certificación de competencias laborales para reconocer formalmente la experiencia práctica de los trabajadores, potenciando su movilidad e inclusión en el mercado formal.",
             "acciones": [
               {
-                "texto": "Reconocimiento formal de competencias y saberes, a través de la implementación de un programa nacional que convalide y certifique oficialmente la experiencia práctica adquirida por los trabajadores en el ejercicio de sus oficios, articulando este esfuerzo con las entidades reguladoras y los organismos oficiales de capacitación para impulsar la inserción en el mercado formal",
+                "titulo": "Reconocimiento formal de competencias y saberes",
+                "texto": "a través de la implementación de un programa nacional que convalide y certifique oficialmente la experiencia práctica adquirida por los trabajadores en el ejercicio de sus oficios, articulando este esfuerzo con las entidades reguladoras y los organismos oficiales de capacitación para impulsar la inserción en el mercado formal",
                 "plazos": []
               },
               {
-                "texto": "Homologación técnica y aseguramiento de la calidad, desarrollando mecanismos de acreditación para perfiles operativos y técnicos que garanticen que las actividades se ejecuten bajo rigurosos estándares de seguridad y normativas vigentes",
+                "titulo": "Homologación técnica y aseguramiento de la calidad",
+                "texto": "desarrollando mecanismos de acreditación para perfiles operativos y técnicos que garanticen que las actividades se ejecuten bajo rigurosos estándares de seguridad y normativas vigentes",
                 "plazos": []
               },
               {
-                "texto": "Revalorización del aprendizaje técnico y tecnológico, impulsando estrategias institucionales que posicionen a las carreras técnicas y tecnológicas como opciones de alto valor profesional, asegurando procesos de capacitación continua para elevar la competitividad de la oferta laboral",
+                "titulo": "Revalorización del aprendizaje técnico y tecnológico",
+                "texto": "impulsando estrategias institucionales que posicionen a las carreras técnicas y tecnológicas como opciones de alto valor profesional, asegurando procesos de capacitación continua para elevar la competitividad de la oferta laboral",
                 "plazos": []
               }
             ]
@@ -356,15 +406,18 @@
             "texto": "Desarrollar condiciones habilitantes de bienestar, inclusión y seguridad laboral para consolidar el empleo adecuado y la atracción y retención del talento humano.",
             "acciones": [
               {
-                "texto": "Fomento de la inclusión laboral generacional y de género, a través del diseño de programas orientados a viabilizar primeras experiencias de empleo formal para la juventud, así como estrategias de equidad que incentiven la incorporación activa de mujeres en carreras técnicas y mandos operativos especializados",
+                "titulo": "Fomento de la inclusión laboral generacional y de género",
+                "texto": "a través del diseño de programas orientados a viabilizar primeras experiencias de empleo formal para la juventud, así como estrategias de equidad que incentiven la incorporación activa de mujeres en carreras técnicas y mandos operativos especializados",
                 "plazos": []
               },
               {
-                "texto": "Incentivos para el empleo y la atracción del talento, implementando planes de bienestar en las unidades de producción, esquemas de desarrollo profesional que consoliden a las industrias locales como ámbitos de empleo altamente competitivos, y mecanismos que eleven las condiciones de vida en el entorno laboral para viabilizar el retorno y la permanencia de los trabajadores en el campo",
+                "titulo": "Incentivos para el empleo y la atracción del talento",
+                "texto": "implementando planes de bienestar en las unidades de producción, esquemas de desarrollo profesional que consoliden a las industrias locales como ámbitos de empleo altamente competitivos, y mecanismos que eleven las condiciones de vida en el entorno laboral para viabilizar el retorno y la permanencia de los trabajadores en el campo",
                 "plazos": []
               },
               {
-                "texto": "Fortalecimiento de los estándares laborales, mediante la implementación de auditorías periódicas y sistemas de control que garanticen entornos de trabajo seguros, disminuyan la siniestralidad y aseguren el estricto cumplimiento de la normativa en operaciones de alta complejidad operativa",
+                "titulo": "Fortalecimiento de los estándares laborales",
+                "texto": "mediante la implementación de auditorías periódicas y sistemas de control que garanticen entornos de trabajo seguros, disminuyan la siniestralidad y aseguren el estricto cumplimiento de la normativa en operaciones de alta complejidad operativa",
                 "plazos": []
               }
             ]
@@ -373,11 +426,13 @@
             "texto": "Impulsar programas de capacitación continua, especialización técnica y asistencia integral para mejorar la productividad en el empleo formal, reducir brechas de habilidades y potenciar el talento humano.",
             "acciones": [
               {
-                "texto": "Expansión de la capacitación productiva y el entrenamiento técnico, implementando programas integrales que fortalezcan las habilidades de la fuerza laboral, garantizando procesos permanentes de actualización que optimicen los costos y aseguren los estándares de calidad demandados por el mercado",
+                "titulo": "Expansión de la capacitación productiva y el entrenamiento técnico",
+                "texto": "implementando programas integrales que fortalezcan las habilidades de la fuerza laboral, garantizando procesos permanentes de actualización que optimicen los costos y aseguren los estándares de calidad demandados por el mercado",
                 "plazos": []
               },
               {
-                "texto": "Desarrollar incentivos para la inversión en talento, mediante mecanismos que fomenten que las organizaciones, en conjunto con los trabajadores, inviertan en la especialización y formación de habilidades",
+                "titulo": "Desarrollar incentivos para la inversión en talento",
+                "texto": "mediante mecanismos que fomenten que las organizaciones, en conjunto con los trabajadores, inviertan en la especialización y formación de habilidades",
                 "plazos": []
               }
             ]
@@ -386,7 +441,8 @@
             "texto": "Fortalecer la previsibilidad, protección social y eficiencia administrativa del entorno laboral formal, mediante la actualización participativa de sus esquemas y procesos, para consolidar el empleo formal y la inversión productiva.",
             "acciones": [
               {
-                "texto": "Previsibilidad técnica y certidumbre en las estructuras de compensación, implementando mecanismos participativos de actualización basados en variables objetivas de productividad, eficiencia y sostenibilidad del mercado, lo que garantiza estabilidad en la planificación financiera corporativa y promueve la reinversión productiva",
+                "titulo": "Previsibilidad técnica y certidumbre en las estructuras de compensación",
+                "texto": "implementando mecanismos participativos de actualización basados en variables objetivas de productividad, eficiencia y sostenibilidad del mercado, lo que garantiza estabilidad en la planificación financiera corporativa y promueve la reinversión productiva",
                 "plazos": []
               }
             ]
@@ -395,15 +451,18 @@
             "texto": "Promover la diversificación de modalidades contractuales adaptadas a las dinámicas de los sectores productivos para fomentar la sostenibilidad del empleo formal.",
             "acciones": [
               {
-                "texto": "Adaptabilidad normativa con garantías laborales, orientado a diseñar esquemas contractuales que sintonicen con las realidades operativas y jornadas especiales de cada sector",
+                "titulo": "Adaptabilidad normativa con garantías laborales",
+                "texto": "orientado a diseñar esquemas contractuales que sintonicen con las realidades operativas y jornadas especiales de cada sector",
                 "plazos": []
               },
               {
-                "texto": "Inclusión y sostenibilidad en la protección laboral, enfocado en desarrollar mecanismos ágiles de afiliación y esquemas de cobertura social que reconozcan las particularidades y aseguren la continuidad de las prestaciones y el respaldo integral al trabajador",
+                "titulo": "Inclusión y sostenibilidad en la protección laboral",
+                "texto": "enfocado en desarrollar mecanismos ágiles de afiliación y esquemas de cobertura social que reconozcan las particularidades y aseguren la continuidad de las prestaciones y el respaldo integral al trabajador",
                 "plazos": []
               },
               {
-                "texto": "Diálogo técnico tripartito, fortaleciendo los espacios de concertación y co-creación entre el Estado, las organizaciones de trabajadores y los empleadores para asegurar que las actualizaciones normativas se implementen de manera participativa, equitativa y sostenible en el tiempo",
+                "titulo": "Diálogo técnico tripartito",
+                "texto": "fortaleciendo los espacios de concertación y co-creación entre el Estado, las organizaciones de trabajadores y los empleadores para asegurar que las actualizaciones normativas se implementen de manera participativa, equitativa y sostenible en el tiempo",
                 "plazos": []
               }
             ]
@@ -418,15 +477,18 @@
             "texto": "Desarrollar corredores estratégicos multimodales e infraestructura habilitante (vial, portuaria, aérea, energética y de telecomunicaciones) para potenciar la conectividad territorial y la logística especializada y productiva.",
             "acciones": [
               {
-                "texto": "Infraestructura física estratégica, enfocada en fortalecer la infraestructura vial, portuaria y energética para garantizar la sostenibilidad logística de los sectores productivos",
+                "titulo": "Infraestructura física estratégica",
+                "texto": "enfocada en fortalecer la infraestructura vial, portuaria y energética para garantizar la sostenibilidad logística de los sectores productivos",
                 "plazos": []
               },
               {
-                "texto": "Sistemas logísticos integrados, enfocado en desarrollar sistemas que articulen a las pequeñas y medianas empresas con los nodos estratégicos de transporte, incluyendo aeropuertos de proximidad regionales",
+                "titulo": "Sistemas logísticos integrados",
+                "texto": "enfocado en desarrollar sistemas que articulen a las pequeñas y medianas empresas con los nodos estratégicos de transporte, incluyendo aeropuertos de proximidad regionales",
                 "plazos": []
               },
               {
-                "texto": "Planificación logística nacional con enfoque productivo y territorial, que busca fortalecer la coordinación público-privada para la gestión de corredores estratégicos y el comercio exterior",
+                "titulo": "Planificación logística nacional con enfoque productivo y territorial",
+                "texto": "que busca fortalecer la coordinación público-privada para la gestión de corredores estratégicos y el comercio exterior",
                 "plazos": []
               }
             ]
@@ -435,11 +497,13 @@
             "texto": "Desplegar conectividad digital y de telecomunicaciones de alta calidad para la inserción eficiente de micro, pequeñas y medianas empresas en mercados globales.",
             "acciones": [
               {
-                "texto": "Expansión de cobertura y calidad, enfocada en expandir la cobertura y fortalecer la conectividad digital en zonas rurales mediante el despliegue de infraestructura 4G/5G y fibra óptica, y la mejora de la calidad y estabilidad del servicio",
+                "titulo": "Expansión de cobertura y calidad",
+                "texto": "enfocada en expandir la cobertura y fortalecer la conectividad digital en zonas rurales mediante el despliegue de infraestructura 4G/5G y fibra óptica, y la mejora de la calidad y estabilidad del servicio",
                 "plazos": []
               },
               {
-                "texto": "Desarrollo de capacidades digitales, para fortalecer las habilidades digitales en empresas y territorios mediante acceso a capacitaciones orientadas a la adopción tecnológica",
+                "titulo": "Desarrollo de capacidades digitales",
+                "texto": "para fortalecer las habilidades digitales en empresas y territorios mediante acceso a capacitaciones orientadas a la adopción tecnológica",
                 "plazos": []
               }
             ]
@@ -448,11 +512,13 @@
             "texto": "Fortalecer las condiciones operativas de la red vial mediante esquemas eficientes de mantenimiento permanente para asegurar el flujo logístico productivo.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Rehabilitar y mantener la red vial primaria y secundaria mediante contratos de mantenimiento por resultados que garanticen condiciones mínimas de transitabilidad",
                 "plazos": []
               },
               {
-                "texto": "Coordinación interinstitucional para mejorar la articulación entre actores nacionales, subnacionales y privados para asegurar coherencia, agilidad y eficacia en la ejecución y mantenimiento vial",
+                "titulo": "Coordinación interinstitucional para mejorar la articulación entre actores nacionales",
+                "texto": "subnacionales y privados para asegurar coherencia, agilidad y eficacia en la ejecución y mantenimiento vial",
                 "plazos": []
               }
             ]
@@ -461,15 +527,18 @@
             "texto": "Modernizar el sistema aduanero y de comercio exterior mediante la digitalización y gestión de riesgos, optimizando tiempos, costos y seguridad institucional.",
             "acciones": [
               {
-                "texto": "Digitalización y eliminación de la discrecionalidad, implementando expedientes electrónicos, estandarizando procesos aduaneros mediante automatización, y estableciendo un botón único de pagos para eliminar el uso de sellos físicos",
+                "titulo": "Digitalización y eliminación de la discrecionalidad",
+                "texto": "implementando expedientes electrónicos, estandarizando procesos aduaneros mediante automatización, y estableciendo un botón único de pagos para eliminar el uso de sellos físicos",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Trazabilidad y control inteligente de carga con tableros de control de acceso público y administrativo, a través de la implementación de escáneres en puertos y del establecimiento de una ventanilla logística integral",
                 "plazos": []
               },
               {
-                "texto": "Avanzar en acuerdos de cooperación internacional que permitan por ejemplo, el reconocimiento mutuo de documentos aduaneros para mejorar la interoperabilidad",
+                "titulo": "Avanzar en acuerdos de cooperación internacional que permitan por ejemplo",
+                "texto": "el reconocimiento mutuo de documentos aduaneros para mejorar la interoperabilidad",
                 "plazos": []
               }
             ]
@@ -478,10 +547,12 @@
             "texto": "Modernizar y diversificar la infraestructura energética para maximizar el valor agregado, optimizar la eficiencia operativa y acelerar la transición energética.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Avanzar hacia una mayor apertura y competencia mediante la separación de segmentos de operación e incorporación de nuevos actores al sistema",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Impulsar la digitalización de la gestión mediante plataformas de información en tiempo real, herramientas inteligentes de monitoreo y sistemas de simulación que mejoren la transparencia y la toma de decisiones",
                 "plazos": []
               }
@@ -497,15 +568,18 @@
             "texto": "Consolidar el ecosistema nacional de Investigación, Desarrollo e Innovación (I+D+i) para dinamizar la transformación productiva y competitiva del país.",
             "acciones": [
               {
-                "texto": "Centros de innovación sectorial, mediante la creación y el equipamiento de plataformas tecnológicas especializadas que provean servicios científicos de alto nivel, incluyendo un instituto nacional de I+D+i petrolero",
+                "titulo": "Centros de innovación sectorial",
+                "texto": "mediante la creación y el equipamiento de plataformas tecnológicas especializadas que provean servicios científicos de alto nivel, incluyendo un instituto nacional de I+D+i petrolero",
                 "plazos": []
               },
               {
-                "texto": "Proyectos conjuntos academia-Estado-empresa, desplegando convenios que enfoquen la investigación en la solución de desafíos técnicos sectoriales",
+                "titulo": "Proyectos conjuntos academia-Estado-empresa",
+                "texto": "desplegando convenios que enfoquen la investigación en la solución de desafíos técnicos sectoriales",
                 "plazos": []
               },
               {
-                "texto": "Fortalecimiento de la investigación pública, consolidando las capacidades de institutos especializados para desarrollar proyectos de automatización, tecnificación y digitalización, incluida la financiación de genética avanzada y biotecnología de precisión",
+                "titulo": "Fortalecimiento de la investigación pública",
+                "texto": "consolidando las capacidades de institutos especializados para desarrollar proyectos de automatización, tecnificación y digitalización, incluida la financiación de genética avanzada y biotecnología de precisión",
                 "plazos": []
               }
             ]
@@ -514,15 +588,18 @@
             "texto": "Fomentar la competitividad global mediante la adopción de estándares internacionales y la certificación técnica de operaciones sostenibles en los sectores estratégicos y productivos.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Estándares, certificación y trazabilidad para acceso a mercados, orientadas a elevar el cumplimiento técnico, productivo y ambiental de calidad de los sectores estratégicos y productivos",
                 "plazos": []
               },
               {
-                "texto": "Infraestructura técnica, acreditación y gestión de riesgos, que fortalezcan las capacidades necesarias para verificar calidad, sostenibilidad y seguridad operativa",
+                "titulo": "Infraestructura técnica",
+                "texto": "acreditación y gestión de riesgos, que fortalezcan las capacidades necesarias para verificar calidad, sostenibilidad y seguridad operativa",
                 "plazos": []
               },
               {
-                "texto": "Diferenciación productiva, marca sectorial e inversión sostenible, para posicionar productos, territorios y sectores en mercados de mayor valor, utilizando atributos como origen, identidad, sostenibilidad y calidad certificada",
+                "titulo": "Diferenciación productiva",
+                "texto": "marca sectorial e inversión sostenible, para posicionar productos, territorios y sectores en mercados de mayor valor, utilizando atributos como origen, identidad, sostenibilidad y calidad certificada",
                 "plazos": []
               }
             ]
@@ -531,15 +608,18 @@
             "texto": "Fortalecer el ordenamiento técnico y la seguridad del territorio productivo para mitigar conflictos socioambientales y contrarrestar actividades ilícitas.",
             "acciones": [
               {
-                "texto": "Relacionamiento comunitario y consulta previa, desarrollando herramientas de planificación que prevengan conflictos con las comunidades del entorno",
+                "titulo": "Relacionamiento comunitario y consulta previa",
+                "texto": "desarrollando herramientas de planificación que prevengan conflictos con las comunidades del entorno",
                 "plazos": []
               },
               {
-                "texto": "Fortalecer la gestión socioambiental integral del país, promoviendo la sostenibilidad de los recursos naturales y el respeto de los derechos de las comunidades",
+                "titulo": "Fortalecer la gestión socioambiental integral del país",
+                "texto": "promoviendo la sostenibilidad de los recursos naturales y el respeto de los derechos de las comunidades",
                 "plazos": []
               },
               {
-                "texto": "Seguridad y control territorial, coordinando esquemas integrales con las entidades competentes para proteger las operaciones formales",
+                "titulo": "Seguridad y control territorial",
+                "texto": "coordinando esquemas integrales con las entidades competentes para proteger las operaciones formales",
                 "plazos": []
               }
             ]
@@ -548,15 +628,18 @@
             "texto": "Fortalecer la gobernanza para consolidar entornos de transparencia, seguridad jurídica, sostenibilidad y eficiencia que dinamicen la competitividad y potencien alianzas estratégicas en los sectores productivos.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Gobernanza multinivel para eliminar duplicidades y garantizar coherencia territorial",
                 "plazos": []
               },
               {
-                "texto": "Gobernanza sectorial especializada, fortaleciendo los consejos consultivos público-privados y los mecanismos de coordinación interministerial en sectores estratégicos como el eléctrico",
+                "titulo": "Gobernanza sectorial especializada",
+                "texto": "fortaleciendo los consejos consultivos público-privados y los mecanismos de coordinación interministerial en sectores estratégicos como el eléctrico",
                 "plazos": []
               },
               {
-                "texto": "Transparencia y estándares internacionales, promoviendo la adopción de criterios ESG en sectores extractivos y estándares homogéneos de calidad que fortalezcan la legitimidad social de la actividad productiva",
+                "titulo": "Transparencia y estándares internacionales",
+                "texto": "promoviendo la adopción de criterios ESG en sectores extractivos y estándares homogéneos de calidad que fortalezcan la legitimidad social de la actividad productiva",
                 "plazos": []
               }
             ]
@@ -565,18 +648,22 @@
             "texto": "Fortalecer la infraestructura estadística y los sistemas de información para elevar la competitividad, previsibilidad y sostenibilidad de los sectores productivos.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Actualización de sistemas estadísticos que levanten información productiva y territorial oficial e implementando un sistema integrado de inteligencia de mercados",
                 "plazos": []
               },
               {
-                "texto": "Interoperabilidad institucional, articulando digitalmente a instituciones productoras de estadística y sistemas de gestión de datos",
+                "titulo": "Interoperabilidad institucional",
+                "texto": "articulando digitalmente a instituciones productoras de estadística y sistemas de gestión de datos",
                 "plazos": []
               },
               {
-                "texto": "Creación de observatorios sectoriales, para el monitoreo permanente de datos con participación de las organizaciones productivas",
+                "titulo": "Creación de observatorios sectoriales",
+                "texto": "para el monitoreo permanente de datos con participación de las organizaciones productivas",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Administrar y mantener actualizado el catastro minero en todas las fases de la actividad minera que promueva una asignación transparente, sostenible y socialmente responsable de los derechos mineros",
                 "plazos": []
               }
@@ -586,10 +673,12 @@
             "texto": "Fortalecer la inserción internacional y optimizar el régimen de comercio exterior para promover la competitividad exportadora.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Promoción de la apertura comercial mediante la negociación de nuevos acuerdos comerciales y la inclusión activa en acuerdos regionales, respaldados por el fortalecimiento operativo de la oficina de sanidad agraria para asegurar el acceso real de los productos ecuatorianos a los mercados destino",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Simplificación de la tramitología de comercio exterior para reducir tiempos de autorización y optimizar las licencias junto con los consejos consultivos sectoriales, complementada con la facilitación de la oferta agroindustrial en ferias comerciales bajo estándares de calidad simplificados",
                 "plazos": []
               }
@@ -599,15 +688,18 @@
             "texto": "Impulsar la asociatividad empresarial, el cooperativismo y los encadenamientos productivos locales.",
             "acciones": [
               {
-                "texto": "Encadenamientos productivos, desarrollando servicios agrícolas complementarios y organizando ferias periódicas de inversión con seguimiento institucional",
+                "titulo": "Encadenamientos productivos",
+                "texto": "desarrollando servicios agrícolas complementarios y organizando ferias periódicas de inversión con seguimiento institucional",
                 "plazos": []
               },
               {
-                "texto": "Asociatividad de la agricultura familiar, fortaleciendo el acceso a servicios rurales y el apoyo a cooperativas y organizaciones de la economía popular y solidaria",
+                "titulo": "Asociatividad de la agricultura familiar",
+                "texto": "fortaleciendo el acceso a servicios rurales y el apoyo a cooperativas y organizaciones de la economía popular y solidaria",
                 "plazos": []
               },
               {
-                "texto": "Escalamiento productivo y certificación, promoviendo la asociatividad en las cadenas agroindustrial y manufacturera para alcanzar economías de escala y facilitar el acceso conjunto a certificaciones y compras públicas",
+                "titulo": "Escalamiento productivo y certificación",
+                "texto": "promoviendo la asociatividad en las cadenas agroindustrial y manufacturera para alcanzar economías de escala y facilitar el acceso conjunto a certificaciones y compras públicas",
                 "plazos": []
               }
             ]
@@ -616,15 +708,18 @@
             "texto": "Impulsar la productividad sistémica y la competitividad de los sectores productivos enfocado en la generación de condiciones habilitantes para la estabilidad y sostenibilidad de la producción nacional.",
             "acciones": [
               {
-                "texto": "Tecnificación y modernización sectorial, implementando planes que maximicen la eficiencia operativa y la toma de decisiones en industrias clave",
+                "titulo": "Tecnificación y modernización sectorial",
+                "texto": "implementando planes que maximicen la eficiencia operativa y la toma de decisiones en industrias clave",
                 "plazos": []
               },
               {
-                "texto": "Estandarización y componentes industriales, priorizando partes y piezas importadas del equipamiento eléctrico para reducir costos logísticos y promover la fabricación nacional",
+                "titulo": "Estandarización y componentes industriales",
+                "texto": "priorizando partes y piezas importadas del equipamiento eléctrico para reducir costos logísticos y promover la fabricación nacional",
                 "plazos": []
               },
               {
-                "texto": "Gestión de riesgos e innovación, implementando sistemas de alerta temprana y mecanismos público privados que financien estudios de pre-inversión y prefactibilidad",
+                "titulo": "Gestión de riesgos e innovación",
+                "texto": "implementando sistemas de alerta temprana y mecanismos público privados que financien estudios de pre-inversión y prefactibilidad",
                 "plazos": []
               }
             ]
@@ -633,17 +728,20 @@
             "texto": "Posicionar al Ecuador como destino turístico y productivo de alto valor, institucionalizando la Marca País con productos de exportación y promoviendo experiencias agroturísticas.",
             "acciones": [
               {
-                "texto": "Gobernanza institucional de la Marca País, estableciendo un marco normativo que regule su uso y licenciamiento en el largo plazo",
+                "titulo": "Gobernanza institucional de la Marca País",
+                "texto": "estableciendo un marco normativo que regule su uso y licenciamiento en el largo plazo",
                 "plazos": [
                   "largo"
                 ]
               },
               {
-                "texto": "Integración de oferta exportable y turística, articulando productos emblemáticos de exportación con la experiencia turística a través de estrategias asociadas al agroturismo y turismo rural",
+                "titulo": "Integración de oferta exportable y turística",
+                "texto": "articulando productos emblemáticos de exportación con la experiencia turística a través de estrategias asociadas al agroturismo y turismo rural",
                 "plazos": []
               },
               {
-                "texto": "Promoción y posicionamiento internacional, diseñando campañas y planes integrales de marketing que posicionen al país en los mercados globales",
+                "titulo": "Promoción y posicionamiento internacional",
+                "texto": "diseñando campañas y planes integrales de marketing que posicionen al país en los mercados globales",
                 "plazos": []
               }
             ]
@@ -652,15 +750,18 @@
             "texto": "Optimizar la eficiencia operativa mediante la simplificación integral, digitalización e interoperabilidad de trámites administrativos para dinamizar la competitividad y potenciar el desarrollo productivo nacional.",
             "acciones": [
               {
-                "texto": "Ventanillas únicas, para integrar trámites que reduzcan costos de transacción y barreras de entrada a la inversión privada",
+                "titulo": "Ventanillas únicas",
+                "texto": "para integrar trámites que reduzcan costos de transacción y barreras de entrada a la inversión privada",
                 "plazos": []
               },
               {
-                "texto": "Digitalización e interoperabilidad, fortaleciendo la coordinación entre entidades productivas, sanitarias, laborales y fiscales y simplificando los permisos de telecomunicaciones",
+                "titulo": "Digitalización e interoperabilidad",
+                "texto": "fortaleciendo la coordinación entre entidades productivas, sanitarias, laborales y fiscales y simplificando los permisos de telecomunicaciones",
                 "plazos": []
               },
               {
-                "texto": "Regulación basada en riesgos, racionalizando las inspecciones y reduciendo la carga administrativa sobre los operadores formales",
+                "titulo": "Regulación basada en riesgos",
+                "texto": "racionalizando las inspecciones y reduciendo la carga administrativa sobre los operadores formales",
                 "plazos": []
               }
             ]
@@ -681,11 +782,13 @@
             "texto": "Ampliar el acceso al crédito productivo especializado mediante productos financieros sectoriales canalizados a través de la banca pública, privada y el sector financiero popular y solidario, en condiciones financieras adaptadas a los ciclos, riesgos y plazos de maduración de los sectores productivos.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Fortalecer la oferta financiera y diversificación de fuentes de financiamiento para ampliar y adaptar la oferta de crédito productivo para sectores estratégicos, mediante productos financieros especializados, líneas de crédito sectoriales, condiciones diferenciadas y mayor participación de la banca pública, privada e internacional",
                 "plazos": []
               },
               {
-                "texto": "Promover la inclusión financiera, simplificación de acceso y respuesta ante condiciones específicas que comprende el diseño de instrumentos crediticios considerando tasas competitivas, plazos ampliados y procesos más ágiles para reducir barreras de acceso al crédito, consolidar la relación de productores y empresas con el sistema financiero. En conjunto, estas acciones buscan que el crédito productivo responda mejor a la realidad de cada sector, facilite la inversión en activos productivos, fortalezca la continuidad de las actividades económicas y contribuya al crecimiento y la productividad",
+                "titulo": "Promover la inclusión financiera",
+                "texto": "simplificación de acceso y respuesta ante condiciones específicas que comprende el diseño de instrumentos crediticios considerando tasas competitivas, plazos ampliados y procesos más ágiles para reducir barreras de acceso al crédito, consolidar la relación de productores y empresas con el sistema financiero.…",
                 "plazos": []
               }
             ]
@@ -694,11 +797,13 @@
             "texto": "Mejorar la bancabilidad y liquidez de empresas y proyectos mediante garantías, fideicomisos, valorización de activos, certificación de riesgos, factoring y otros mecanismos ágiles de pago.",
             "acciones": [
               {
+                "titulo": null,
                 "texto": "Mejorar la bancabilidad y liquidez de empresas y proyectos productivos mediante instrumentos que reduzcan riesgos, amplíen las garantías aceptadas y faciliten el acceso efectivo al financiamiento",
                 "plazos": []
               },
               {
-                "texto": "Ampliar los tipos de garantías aceptadas para adecuarlas a la realidad productiva para que el sistema financiero reconozca como respaldo las garantías tradicionales, los activos productivos, los flujos futuros, los derechos económicos e intangibles que reflejan mejor la capacidad real de las empresas para acceder a crédito. Estas acciones se orientan a sectores donde la estructura de activos, contratos o flujos requiere instrumentos financieros más flexibles y adecuados a su realidad productiva",
+                "titulo": null,
+                "texto": "Ampliar los tipos de garantías aceptadas para adecuarlas a la realidad productiva para que el sistema financiero reconozca como respaldo las garantías tradicionales, los activos productivos, los flujos futuros, los derechos económicos e intangibles que reflejan mejor la capacidad real de las empresas para acceder a crédito.…",
                 "plazos": []
               }
             ]
@@ -707,17 +812,20 @@
             "texto": "Diversificar las fuentes de financiamiento para canalizar recursos de mediano y largo plazo hacia actividades productivas, emprendimientos e inversiones estratégicas.",
             "acciones": [
               {
-                "texto": "Diversificación de fuentes de financiamiento de mediano y largo plazo, mediante instrumentos alternativos al crédito bancario tradicional que permitan canalizar recursos hacia emprendimientos, proyectos productivos, sostenibles y estratégicos",
+                "titulo": "Diversificación de fuentes de financiamiento de mediano y largo plazo",
+                "texto": "mediante instrumentos alternativos al crédito bancario tradicional que permitan canalizar recursos hacia emprendimientos, proyectos productivos, sostenibles y estratégicos",
                 "plazos": [
                   "largo"
                 ]
               },
               {
-                "texto": "Movilización de financiamiento internacional, cooperación y recursos externos hacia proyectos estratégicos, bajo condiciones competitivas y con mayor capacidad de estructuración financiera",
+                "titulo": "Movilización de financiamiento internacional",
+                "texto": "cooperación y recursos externos hacia proyectos estratégicos, bajo condiciones competitivas y con mayor capacidad de estructuración financiera",
                 "plazos": []
               },
               {
-                "texto": "Promoción de financiamiento sostenible, temático, mercados de carbono o mecanismos de monetización de servicios ambientales, orientados a inversiones en transición energética, reducción de emisiones, sostenibilidad productiva e impacto ambiental positivo. En conjunto, estas acciones buscan reducir la dependencia del crédito bancario tradicional y dinamizar el mercado financiero",
+                "titulo": "Promoción de financiamiento sostenible",
+                "texto": "temático, mercados de carbono o mecanismos de monetización de servicios ambientales, orientados a inversiones en transición energética, reducción de emisiones, sostenibilidad productiva e impacto ambiental positivo. En conjunto, estas acciones buscan reducir la dependencia del crédito bancario tradicional y dinamizar el mercado financiero",
                 "plazos": []
               }
             ]
@@ -726,15 +834,18 @@
             "texto": "Dinamizar e integrar el mercado de valores como fuente complementaria de financiamiento para el sector público y privado.",
             "acciones": [
               {
-                "texto": "Fortalecer la infraestructura e institucionalidad del mercado de valores, incluyendo el mercado de deuda pública, bolsas de valores, emisores, inversionistas e intermediarios",
+                "titulo": "Fortalecer la infraestructura e institucionalidad del mercado de valores",
+                "texto": "incluyendo el mercado de deuda pública, bolsas de valores, emisores, inversionistas e intermediarios",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Desarrollar instrumentos bursátiles específicos para canalizar recursos hacia sectores productivos y proyectos estratégicos",
                 "plazos": []
               },
               {
-                "texto": "Facilitar mecanismos de emisión, participación accionaria, obligaciones, bonos u otros valores que permitan atraer inversión privada",
+                "titulo": "Facilitar mecanismos de emisión",
+                "texto": "participación accionaria, obligaciones, bonos u otros valores que permitan atraer inversión privada",
                 "plazos": []
               }
             ]
@@ -749,10 +860,12 @@
             "texto": "Promover la resiliencia financiera mediante seguros inclusivos e instrumentos de gestión y mitigación de riesgos productivos y climáticos.",
             "acciones": [
               {
-                "texto": "La vinculación del crédito agropecuario, fondos de aseguramiento y coberturas específicas frente a riesgos climáticos, sanitarios y productivos; y la incorporación de mecanismos de aseguramiento para cadenas manufactureras dependientes de insumos primarios",
+                "titulo": "La vinculación del crédito agropecuario",
+                "texto": "fondos de aseguramiento y coberturas específicas frente a riesgos climáticos, sanitarios y productivos; y la incorporación de mecanismos de aseguramiento para cadenas manufactureras dependientes de insumos primarios",
                 "plazos": []
               },
               {
+                "titulo": null,
                 "texto": "Desarrollo de una agenda nacional de seguros inclusivos y productos de protección financiera que potencien la oferta y uso de productos como microseguros, seguros paramétricos, seguros de largo plazo o coberturas sectoriales adaptadas a los riesgos de cada actividad",
                 "plazos": [
                   "largo"
@@ -764,11 +877,13 @@
             "texto": "Potenciar la inclusión financiera y eficiencia del sistema financiero nacional.",
             "acciones": [
               {
-                "texto": "Profundización de la inclusión financiera y formalización de usuarios productivos mediante programas de educación financiera y tributaria, acompañamiento técnico, protección al usuario financiero, difusión de instrumentos de financiamiento disponibles y fortalecimiento de capacidades para emprendedores, productores, empresas, gremios, colegios profesionales y universidades",
+                "titulo": null,
+                "texto": "Profundización de la inclusión financiera y formalización de usuarios productivos mediante programas de educación financiera y tributaria, acompañamiento técnico, protección al usuario financiero, difusión de instrumentos de financiamiento disponibles y fortalecimiento de capacidades para emprendedores, productores, empresas, gremios,…",
                 "plazos": []
               },
               {
-                "texto": "Eficiencia operativa del sistema financiero que abarca la revisión integral del sistema de tasas de interés hacia esquemas técnicos basados en perfiles de riesgo, con el fin de mejorar la asignación del crédito y dinamizar el financiamiento productivo; además, la promoción del uso de pagos digitales, reducción de costos de transacción, simplificación de trámites financieros y adecuación de requisitos de acceso al crédito, especialmente en sectores prioritarios",
+                "titulo": null,
+                "texto": "Eficiencia operativa del sistema financiero que abarca la revisión integral del sistema de tasas de interés hacia esquemas técnicos basados en perfiles de riesgo, con el fin de mejorar la asignación del crédito y dinamizar el financiamiento productivo;…",
                 "plazos": []
               }
             ]
@@ -777,11 +892,13 @@
             "texto": "Robustecer la regulación prudencial del sistema financiero y priorizar el enfoque de supervisión basada en riesgos.",
             "acciones": [
               {
-                "texto": "Modernizar el marco regulatorio y fortalecer la supervisión prudencial del sistema financiero bajo un enfoque basado en riesgos. Asimismo, el alcance comprende el establecimiento de reglas claras para plataformas digitales y Fintech, la promoción de interoperabilidad e innovación privada, y la actualización de la normativa aplicable a sectores financieros específicos, incluyendo el sector asegurador",
+                "titulo": null,
+                "texto": "Modernizar el marco regulatorio y fortalecer la supervisión prudencial del sistema financiero bajo un enfoque basado en riesgos. Asimismo, el alcance comprende el establecimiento de reglas claras para plataformas digitales y Fintech, la promoción de interoperabilidad e innovación privada,…",
                 "plazos": []
               },
               {
-                "texto": "Fortalecer la capacidad supervisora para identificar, evaluar y mitigar riesgos de manera preventiva, reduciendo el arbitraje regulatorio entre productos financieros similares. Esto incluye la revisión de esquemas prudenciales, como el régimen de provisiones, para incorporar criterios basados en pérdidas esperadas y fortalecer la vigilancia sobre la calidad de los activos, la exposición al riesgo y la resiliencia de las entidades financieras. En conjunto, el lineamiento busca consolidar una arquitectura regulatoria más moderna, coherente y preventiva, que permita acompañar la innovación financiera sin comprometer la estabilidad del sistema, proteger la confianza de los usuarios y fortalecer la sostenibilidad del sistema financiero en el marco de la dolarización",
+                "titulo": "Fortalecer la capacidad supervisora para identificar",
+                "texto": "evaluar y mitigar riesgos de manera preventiva, reduciendo el arbitraje regulatorio entre productos financieros similares. Esto incluye la revisión de esquemas prudenciales, como el régimen de provisiones, para incorporar criterios basados en pérdidas esperadas y fortalecer la vigilancia sobre la calidad de los activos,…",
                 "plazos": []
               }
             ]
