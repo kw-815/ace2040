@@ -162,6 +162,23 @@ for i, m in enumerate(matches):
         extracted.append({"num": int(m.group(1)), "titulo": titulo_lin, "acciones": []})
         continue
 
+    # Antes de aplicar stop_at, eliminar saltos de página intra-párrafo:
+    # el OCR mete `![Página N ...](...)` + `---` + `## Página N+1` en medio
+    # de una oración que continúa. Tras unwrap, `## Página N` puede quedar
+    # inline con el texto de continuación. Sin esto, stop_at corta a mitad.
+    para = re.sub(
+        r"!\[Página\s+\d+\s+del documento original\]\(pages/page-\d+\.jpg\)"
+        r"\s*\n*\s*---?\s*\n*\s*##\s+Página\s+\d+\s*",
+        " ",
+        para,
+    )
+    # Y por si el marcador de imagen aparece solo (sin --- ni ## Página):
+    para = re.sub(
+        r"!\[Página\s+\d+\s+del documento original\]\(pages/page-\d+\.jpg\)",
+        " ",
+        para,
+    )
+
     # Cortar en el primer patrón de stop
     para = stop_at(para)
     para = clean_debris(para)
@@ -193,6 +210,10 @@ for i, m in enumerate(matches):
         titulo, desc = split_titulo(raw)
         # Aplicar tope de longitud a la descripción
         desc_condensada = condense(desc, max_chars=340)
+        # Garantizar puntuación final (si condense no dejó "…", añadir ".")
+        desc_condensada = desc_condensada.rstrip(" ,;:")
+        if desc_condensada and desc_condensada[-1] not in ".…!?":
+            desc_condensada += "."
         acciones_final.append({
             "titulo": titulo,
             "texto": desc_condensada,
