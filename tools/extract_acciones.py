@@ -120,19 +120,28 @@ def split_titulo(action_txt):
             return titulo, desc
     return None, action_txt
 
-def condense(txt, max_chars=340):
-    """Recorta en el punto natural más cercano si excede max_chars."""
+def condense(txt, max_chars=600):
+    """Recorta SÓLO en '. ' o '; ' (nunca en coma). Prioriza no cortar a
+    mitad de enumeración. Si dentro del rango [50%, 140%] de max_chars no
+    hay corte limpio, extiende buscando el próximo '.' o ';'. Si el texto
+    aún no tiene puntuación fuerte, se devuelve completo: es preferible un
+    texto un poco largo que uno mutilado.
+    """
     if len(txt) <= max_chars:
         return txt
-    # Buscar corte en ; o . o , dentro de un rango razonable
-    window = txt[:max_chars]
-    for sep in [". ", "; ", ", "]:
+    hard_limit = int(max_chars * 1.4)
+    window = txt[:hard_limit] if len(txt) > hard_limit else txt
+    for sep in [". ", "; "]:
         idx = window.rfind(sep)
-        if idx > max_chars * 0.6:
-            return window[:idx + 1].strip() + "…"
-    # Fallback: cortar en el último espacio
-    idx = window.rfind(" ")
-    return window[:idx].strip() + "…"
+        if idx > max_chars * 0.5:
+            return window[:idx + 1].strip()
+    # Nada limpio en la ventana: buscar el próximo . o ; después
+    tail = txt[max_chars:]
+    m = re.search(r"[.;]\s", tail)
+    if m:
+        return txt[: max_chars + m.end() - 1].strip()
+    # Sin puntuación fuerte en todo el texto: devolver completo
+    return txt.strip()
 
 extracted = []
 for i, m in enumerate(matches):
@@ -208,11 +217,13 @@ for i, m in enumerate(matches):
         if not raw or len(raw) < 30:
             continue
         titulo, desc = split_titulo(raw)
-        # Aplicar tope de longitud a la descripción
-        desc_condensada = condense(desc, max_chars=340)
-        # Garantizar puntuación final (si condense no dejó "…", añadir ".")
+        # Aplicar tope de longitud a la descripción (corte limpio)
+        desc_condensada = condense(desc, max_chars=600)
+        # Garantizar puntuación final. Con el nuevo condense el texto
+        # queda cortado en "." o ";" o completo, así que sólo hay que
+        # asegurar que el último caracter sea "." "!" o "?".
         desc_condensada = desc_condensada.rstrip(" ,;:")
-        if desc_condensada and desc_condensada[-1] not in ".…!?":
+        if desc_condensada and desc_condensada[-1] not in ".!?":
             desc_condensada += "."
         acciones_final.append({
             "titulo": titulo,
