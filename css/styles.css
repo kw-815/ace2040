@@ -1592,20 +1592,21 @@ p { margin: 0; }
   background: rgba(255,255,255,0.03);
   border: 1px solid var(--t-15);
   border-radius: 14px;
+  display: flex;
+  flex-direction: column;
 }
 .rfblock__title {
   font-size: var(--fs-md);
   color: var(--white);
   font-weight: 600;
   line-height: 1.3;
-  /* Reservar altura de 2 líneas para que la línea naranja (border-bottom)
-     quede alineada entre las tres cards aunque un título ocupe una sola
-     línea (ej. "Cooperación estratégica"). */
-  min-height: 2.6em;
-  min-height: 2lh;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 0.6rem;
+  /* Fija la altura a 2 líneas EXACTAS para que la línea naranja
+     (border-bottom) quede en la misma posición en las tres cards,
+     sin importar si el título ocupa 1 o 2 líneas. Se calcula sobre
+     el propio font-size del título con em, así responde bien al
+     clamp() de --fs-md en todos los breakpoints. */
+  min-height: calc(1.3em * 2);
+  margin: 0 0 0.6rem;
   padding-bottom: 0.6rem;
   border-bottom: 2px solid var(--orange);
 }
