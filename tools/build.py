@@ -6,7 +6,7 @@ Estructura del contenido: pilar → ejes[] → lineamientos[].
 Se toca este archivo solo si cambia la arquitectura del producto.
 Contenido y metadatos: objs.json + config.py.
 """
-import json, html, os, sys
+import json, html, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from icons import pick_icon, svg
 import config as C
@@ -86,6 +86,64 @@ def rich_text(body):
         return f'<b>{esc(lead)}</b> <span>{esc(rest)}</span>'
     return f'<b>{esc(lead)}</b>'
 
+# --- Resaltado de frase de impacto para acciones SIN título ---
+# Detecta marcadores de transición fuertes ("que busca", "orientada a",
+# "enfocada en", etc.) y resalta lo que va después hasta el primer punto
+# o punto y coma. Si el corte no es limpio, no resalta (mejor plano que
+# fragmento roto).
+_TRANSITION_RE = re.compile(
+    r"\b("
+    r"que\s+busca(?:n|ron|se)?|"
+    r"que\s+comprende[n]?|"
+    r"que\s+permit[ae]n?|"
+    r"que\s+garantic[eé]n?|"
+    r"que\s+promuev[ae]n?|"
+    r"que\s+doten|"
+    r"orientad[oa]s?\s+a|"
+    r"enfocad[oa]s?\s+en|"
+    r"tendientes?\s+a|"
+    r"dirigid[oa]s?\s+a|"
+    r"apunta[n]?\s+a"
+    r")\s+",
+    re.IGNORECASE,
+)
+
+def find_highlight(text):
+    """Devuelve (pre, highlight, post) o None si no hay corte limpio.
+
+    Reglas:
+    - Sólo se resalta lo que sigue a un marcador de transición fuerte.
+    - El corte termina en el primer '. ' o '; ' posterior al marcador.
+    - La primera palabra del resaltado debe ser un verbo en infinitivo
+      (-ar/-er/-ir), para evitar arrancar en artículo, preposición o
+      sustantivo suelto (p.ej. "al inversionista", "una asignación",
+      "resultados verificables").
+    - Longitud útil: 40–250 chars. Fuera de rango, no se resalta.
+    """
+    if not text:
+        return None
+    m = _TRANSITION_RE.search(text)
+    if not m:
+        return None
+    start = m.end()
+    rest = text[start:]
+    end_m = re.search(r"[.;](?:\s|$)", rest)
+    end = start + end_m.end() if end_m else len(text)
+    highlight = text[start:end].strip()
+    if not (40 <= len(highlight) <= 250):
+        return None
+    # Verificar que arranca con infinitivo (ar/er/ir). Es un filtro simple
+    # que elimina casi todos los falsos positivos sin exigir un lexicón.
+    first_word = re.match(r"[a-záéíóúñü]+", highlight, re.I)
+    if not first_word:
+        return None
+    fw = first_word.group(0).lower()
+    if not (fw.endswith("ar") or fw.endswith("er") or fw.endswith("ir")):
+        return None
+    pre = text[:start].rstrip()
+    post = text[end:].lstrip()
+    return pre, highlight, post
+
 def nav(current):
     out = []
     for i, (short, _, _) in enumerate(C.META, 1):
@@ -128,11 +186,18 @@ def pager(n):
     return "\n".join(parts)
 
 def render_acciones(acciones):
-    """Renderiza la lista de acciones bajo un lineamiento (sin accordion)."""
+    """Renderiza la lista de acciones bajo un lineamiento (sin accordion).
+
+    - Label fijo "Acciones" (sin conteo).
+    - Bullet visual coloreado en lugar de numeración.
+    - Título en negrita cuando existe; si no existe, se intenta detectar
+      una frase de impacto tras un marcador de transición y se resalta.
+      Si no hay marcador claro, el texto queda plano.
+    """
     if not acciones:
         return ""
     items = []
-    for j, a in enumerate(acciones, 1):
+    for a in acciones:
         titulo = a.get("titulo") if isinstance(a, dict) else None
         texto = a.get("texto", "") if isinstance(a, dict) else a
         plazos = a.get("plazos", []) if isinstance(a, dict) else []
@@ -143,27 +208,40 @@ def render_acciones(acciones):
                 for p in plazos
             )
             chips = f'<div class="accion__chips">{chip_html}</div>'
-        titulo_html = (
-            f'<span class="accion__titulo">{esc(titulo)}</span> '
-            if titulo else ""
-        )
+
+        if titulo:
+            # Título bold al inicio, texto continúa (patrón mayoritario).
+            text_html = (
+                f'<span class="accion__titulo">{esc(titulo)}</span> '
+                f'{esc(texto)}'
+            )
+        else:
+            # Sin título: intentar resaltar la frase de impacto.
+            hl = find_highlight(texto)
+            if hl:
+                pre, highlight, post = hl
+                parts = [esc(pre), f'<span class="accion__highlight">{esc(highlight)}</span>']
+                if post:
+                    parts.append(esc(post))
+                text_html = " ".join(parts)
+            else:
+                text_html = esc(texto)
+
         items.append(
             f'                <li class="accion">\n'
-            f'                  <span class="accion__num" aria-hidden="true">{j:02d}</span>\n'
+            f'                  <span class="accion__bullet" aria-hidden="true"></span>\n'
             f'                  <div class="accion__body">\n'
-            f'                    <p class="accion__text">{titulo_html}{esc(texto)}</p>\n'
+            f'                    <p class="accion__text">{text_html}</p>\n'
             f'                    {chips}\n'
             f'                  </div>\n'
             f'                </li>'
         )
-    n = len(acciones)
-    word = "acciones" if n != 1 else "acción"
     return (
         f'              <div class="acciones-wrap">\n'
-        f'                <p class="acciones-wrap__label">{n} {word} de política</p>\n'
-        f'                <ol class="acciones">\n'
+        f'                <p class="acciones-wrap__label">Acciones</p>\n'
+        f'                <ul class="acciones">\n'
         + "\n".join(items) + "\n"
-        f'                </ol>\n'
+        f'                </ul>\n'
         f'              </div>\n'
     )
 
