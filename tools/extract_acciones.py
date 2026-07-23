@@ -225,6 +225,12 @@ for i, m in enumerate(matches):
         desc_condensada = desc_condensada.rstrip(" ,;:")
         if desc_condensada and desc_condensada[-1] not in ".!?":
             desc_condensada += "."
+        # Si no hay título, la descripción arranca sola (no queda arrastrada
+        # por un noun-phrase previo), así que debe empezar en mayúscula.
+        # Cuando SÍ hay título, la descripción es continuación gramatical
+        # ("mediante...", "a través de...") y se mantiene en minúscula.
+        if titulo is None and desc_condensada:
+            desc_condensada = desc_condensada[0].upper() + desc_condensada[1:]
         acciones_final.append({
             "titulo": titulo,
             "texto": desc_condensada,
