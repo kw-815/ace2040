@@ -571,18 +571,53 @@ p { margin: 0; }
   position: relative;
   z-index: 1;
   margin-top: auto;
-  font-size: var(--fs-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+/* Pill principal: acción explícita "Explorar pilar →" */
+.obj-cover__cta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px 7px 14px;
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 999px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
   font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background var(--t-fast) var(--ease),
+              transform var(--t-fast) var(--ease);
+}
+.obj-cover__cta-pill svg {
+  width: 14px;
+  height: 14px;
+  transition: transform var(--t-fast) var(--ease);
+}
+.obj-cover:hover .obj-cover__cta-pill,
+.obj-cover:focus-visible .obj-cover__cta-pill {
+  background: var(--indigo-deep);
+  transform: translateY(-1px);
+}
+.obj-cover:hover .obj-cover__cta-pill svg,
+.obj-cover:focus-visible .obj-cover__cta-pill svg {
+  transform: translateX(3px);
+}
+/* Meta abajo: "N lineamientos" en tono secundario */
+.obj-cover__meta {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
   letter-spacing: 0.06em;
   color: var(--ink);
-  opacity: 0.75;
-  transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+  opacity: 0.6;
+  text-transform: uppercase;
 }
-.obj-cover:hover .obj-cover__cta,
-.obj-cover:focus-visible .obj-cover__cta {
-  opacity: 1;
-  transform: translateX(2px);
-}
+.obj-cover:hover .obj-cover__meta,
+.obj-cover:focus-visible .obj-cover__meta { opacity: 0.85; }
 
 .obj-cover__photo {
   flex: 1;
@@ -1562,6 +1597,14 @@ p { margin: 0; }
   font-size: var(--fs-md);
   color: var(--white);
   font-weight: 600;
+  line-height: 1.3;
+  /* Reservar altura de 2 líneas para que la línea naranja (border-bottom)
+     quede alineada entre las tres cards aunque un título ocupe una sola
+     línea (ej. "Cooperación estratégica"). */
+  min-height: 2.6em;
+  min-height: 2lh;
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 0.6rem;
   padding-bottom: 0.6rem;
   border-bottom: 2px solid var(--orange);
@@ -1806,9 +1849,15 @@ section[id] { scroll-margin-top: calc(var(--nav-h) + 1rem); }
 .phase__grid--stacked {
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: auto;  /* rompe el 1fr heredado que igualaba alturas */
   gap: 14px;
   margin-top: 18px;
+  align-items: start;    /* cada card se ajusta a su contenido, no estira */
 }
+.phase__grid--stacked::before { display: none; }  /* sin regla vertical */
+
+/* En el layout apilado el body ya no necesita crecer para empujar nada */
+.phase__grid--stacked .strat__body { flex: 0 0 auto; }
 
 /* --- Card lineamiento: superficie clara, ribete por eje, denso -- */
 .phase__grid--stacked .strat {
