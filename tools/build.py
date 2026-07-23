@@ -193,6 +193,9 @@ def render_acciones(acciones):
     - Título en negrita cuando existe; si no existe, se intenta detectar
       una frase de impacto tras un marcador de transición y se resalta.
       Si no hay marcador claro, el texto queda plano.
+    - Los chips de plazo (corto/mediano/largo) se ocultan por decisión
+      editorial: generaban ambigüedad. El dato sigue en objs.json por si
+      se retoma en el futuro.
     """
     if not acciones:
         return ""
@@ -200,14 +203,6 @@ def render_acciones(acciones):
     for a in acciones:
         titulo = a.get("titulo") if isinstance(a, dict) else None
         texto = a.get("texto", "") if isinstance(a, dict) else a
-        plazos = a.get("plazos", []) if isinstance(a, dict) else []
-        chips = ""
-        if plazos:
-            chip_html = "".join(
-                f'<span class="accion__chip accion__chip--{p}">{p.capitalize()} plazo</span>'
-                for p in plazos
-            )
-            chips = f'<div class="accion__chips">{chip_html}</div>'
 
         if titulo:
             # Título bold al inicio, texto continúa (patrón mayoritario).
@@ -232,7 +227,6 @@ def render_acciones(acciones):
             f'                  <span class="accion__bullet" aria-hidden="true"></span>\n'
             f'                  <div class="accion__body">\n'
             f'                    <p class="accion__text">{text_html}</p>\n'
-            f'                    {chips}\n'
             f'                  </div>\n'
             f'                </li>'
         )
