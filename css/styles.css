@@ -1600,11 +1600,13 @@ p { margin: 0; }
   color: var(--white);
   font-weight: 600;
   line-height: 1.3;
-  /* Fija la altura a 2 líneas EXACTAS para que la línea naranja
-     (border-bottom) quede en la misma posición en las tres cards,
-     sin importar si el título ocupa 1 o 2 líneas. Se calcula sobre
-     el propio font-size del título con em, así responde bien al
-     clamp() de --fs-md en todos los breakpoints. */
+  /* box-sizing content-box es intencional: el sitio usa border-box
+     globalmente, pero aquí necesitamos que min-height reserve EL
+     ESPACIO DEL TEXTO puro (2 líneas), y que el padding-bottom + el
+     border-bottom se sumen encima. De lo contrario, con border-box, el
+     min-height se consume en padding y no alcanza para 2 líneas
+     completas — esto era exactamente el bug de alineación reportado. */
+  box-sizing: content-box;
   min-height: calc(1.3em * 2);
   margin: 0 0 0.6rem;
   padding-bottom: 0.6rem;
